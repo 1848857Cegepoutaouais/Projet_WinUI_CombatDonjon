@@ -1,0 +1,10 @@
+{
+  "profiles": {
+    "Projet_WinUI_CombatDonjon (Package)": {
+      "commandName": "MsixPackage"
+    },
+    "Projet_WinUI_CombatDonjon (Unpackaged)": {
+      "commandName": "Project"
+    }
+  }
+}
