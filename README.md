@@ -10,6 +10,21 @@ Chaque classe d'aventurier va pouvoir utilisé des capacité différentes
 ## Les classes
 ```mermaid
 classDiagram
+	class Jeu {
+		- Donjon
+		- EquipeJoueur
+		+ Sauvegarder()
+		+ ChargerPartie()
+	}
+
+	class Partie {
+
+	}
+
+	class Donjon {
+		
+	}
+
 	class Monstre {
 	
 	}
@@ -38,9 +53,54 @@ classDiagram
 	}
 
 
-
+	Jeu *-- Donjon
 	Acteur *-- Joueur
 	Acteur *-- Monstre
 	Joueur *-- ClasseJoueur
-	Combat --> Attaque
+	Combat --|> Attaque
+```
+
+## Schémat Entité-Relation
+```mermaid
+	erDiagram
+    CUSTOMER ||--o{ ORDER : places
+    ORDER ||--|{ ORDER_ITEM : contains
+    PRODUCT ||--o{ ORDER_ITEM : includes
+    
+	Partie ||--|| Donjon : places
+	Donjon }|--|{ Biome : places
+
+	Partie {
+		int		PartieID
+		string	PartieNom
+		int		DonjonID
+	}
+
+	Donjon {
+		int		DonjonID
+	}
+
+	Biome {
+		int		BiomeID
+	}
+	
+	CUSTOMER {
+        string id
+        string name
+        string email
+    }
+    ORDER {
+        string id
+        date orderDate
+        string status
+    }
+    PRODUCT {
+        string id
+        string name
+        float price
+    }
+    ORDER_ITEM {
+        int quantity
+        float price
+    }
 ```
