@@ -1,0 +1,45 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Page
+    x:Class="Projet_WinUI_CombatDonjon.Views.PageTitre"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:local="using:Projet_WinUI_CombatDonjon.Views"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d">
+
+    <Canvas x:ConnectionId='2'
+        x:Name="Background"
+        Width="1*"
+        Height="3*"
+        Background="Gray">
+        <Grid>
+            <Grid.RowDefinitions>
+                <RowDefinition Height="1*" />
+                <RowDefinition Height="2*" />
+                <RowDefinition Height="1*" />
+            </Grid.RowDefinitions>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="1*" />
+                <ColumnDefinition Width="2*" />
+                <ColumnDefinition Width="1*" />
+            </Grid.ColumnDefinitions>
+            <Rectangle
+                Grid.Row="0"
+                Grid.Column="1"
+                Fill="Aquamarine" />
+            <StackPanel
+                HorizontalAlignment="Center"
+                VerticalAlignment="Center"
+                Spacing="30">
+                <Rectangle
+                    Width="2*"
+                    Height="50"
+                    Fill="Gray" />
+                <StackPanel Orientation="Horizontal" />
+            </StackPanel>
+        </Grid>
+    </Canvas>
+
+</Page>
+

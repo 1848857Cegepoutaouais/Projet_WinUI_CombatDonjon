@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "HirxMCtc+sE=",
+  "dgSpecHash": "Ezlk8DCPs5Y=",
   "success": true,
-  "projectFilePath": "C:\\Users\\1848857\\source\\repos\\1848857Cegepoutaouais\\Projet_WinUI_CombatDonjon\\Projet_WinUI_CombatDonjon\\Projet_WinUI_CombatDonjon.csproj",
+  "projectFilePath": "C:\\Users\\1848857\\source\\repos\\Projet_WinUI_CombatDonjon\\Projet_WinUI_CombatDonjon\\Projet_WinUI_CombatDonjon.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\1848857\\.nuget\\packages\\microsoft.web.webview2\\1.0.3719.77\\microsoft.web.webview2.1.0.3719.77.nupkg.sha512",
     "C:\\Users\\1848857\\.nuget\\packages\\microsoft.windows.ai.machinelearning\\2.1.74\\microsoft.windows.ai.machinelearning.2.1.74.nupkg.sha512",

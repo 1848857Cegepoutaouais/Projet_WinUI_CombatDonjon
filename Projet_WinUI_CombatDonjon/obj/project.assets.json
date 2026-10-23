@@ -3575,11 +3575,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\1848857\\source\\repos\\1848857Cegepoutaouais\\Projet_WinUI_CombatDonjon\\Projet_WinUI_CombatDonjon\\Projet_WinUI_CombatDonjon.csproj",
+      "projectUniqueName": "C:\\Users\\1848857\\source\\repos\\Projet_WinUI_CombatDonjon\\Projet_WinUI_CombatDonjon\\Projet_WinUI_CombatDonjon.csproj",
       "projectName": "Projet_WinUI_CombatDonjon",
-      "projectPath": "C:\\Users\\1848857\\source\\repos\\1848857Cegepoutaouais\\Projet_WinUI_CombatDonjon\\Projet_WinUI_CombatDonjon\\Projet_WinUI_CombatDonjon.csproj",
+      "projectPath": "C:\\Users\\1848857\\source\\repos\\Projet_WinUI_CombatDonjon\\Projet_WinUI_CombatDonjon\\Projet_WinUI_CombatDonjon.csproj",
       "packagesPath": "C:\\Users\\1848857\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\1848857\\source\\repos\\1848857Cegepoutaouais\\Projet_WinUI_CombatDonjon\\Projet_WinUI_CombatDonjon\\obj\\",
+      "outputPath": "C:\\Users\\1848857\\source\\repos\\Projet_WinUI_CombatDonjon\\Projet_WinUI_CombatDonjon\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"

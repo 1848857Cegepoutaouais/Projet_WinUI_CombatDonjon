@@ -1,1 +1,1 @@
-C:\Users\1848857\source\repos\1848857Cegepoutaouais\Projet_WinUI_CombatDonjon\Projet_WinUI_CombatDonjon\Projet_WinUI_CombatDonjon.csproj;x64
+C:\Users\1848857\source\repos\Projet_WinUI_CombatDonjon\Projet_WinUI_CombatDonjon\Projet_WinUI_CombatDonjon.csproj;x64

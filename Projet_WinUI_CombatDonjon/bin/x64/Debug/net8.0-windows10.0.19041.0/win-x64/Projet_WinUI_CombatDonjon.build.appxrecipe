@@ -1,7 +1,7 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <PropertyGroup>
-    <Machine>MZ03CVZ4</Machine>
+    <Machine>MZ03CVYZ</Machine>
     <WindowsUser>1848857</WindowsUser>
     <TargetPlatformIdentifier>Windows</TargetPlatformIdentifier>
     <TargetOsVersion>10.0</TargetOsVersion>
@@ -10,28 +10,28 @@
     <PackageArchitecture>x64</PackageArchitecture>
     <PackageIdentityName>3d9fa13e-5164-4a6f-9d55-411e03e6fac3</PackageIdentityName>
     <PackageIdentityPublisher>CN=1848857</PackageIdentityPublisher>
-    <IntermediateOutputPath>C:\Users\1848857\source\repos\1848857Cegepoutaouais\Projet_WinUI_CombatDonjon\Projet_WinUI_CombatDonjon\obj\x64\Debug\net8.0-windows10.0.19041.0\win-x64\</IntermediateOutputPath>
+    <IntermediateOutputPath>C:\Users\1848857\source\repos\Projet_WinUI_CombatDonjon\Projet_WinUI_CombatDonjon\obj\x64\Debug\net8.0-windows10.0.19041.0\win-x64\</IntermediateOutputPath>
     <RemoteDeploymentType>CopyToDevice</RemoteDeploymentType>
     <PackageRegistrationPath></PackageRegistrationPath>
     <RemoveNonLayoutFiles>false</RemoveNonLayoutFiles>
     <DeployOptionalPackages>false</DeployOptionalPackages>
     <WindowsSdkPath></WindowsSdkPath>
-    <LayoutDir>C:\Users\1848857\source\repos\1848857Cegepoutaouais\Projet_WinUI_CombatDonjon\Projet_WinUI_CombatDonjon\bin\x64\Debug\net8.0-windows10.0.19041.0\win-x64\AppX</LayoutDir>
+    <LayoutDir>C:\Users\1848857\source\repos\Projet_WinUI_CombatDonjon\Projet_WinUI_CombatDonjon\bin\x64\Debug\net8.0-windows10.0.19041.0\win-x64\AppX</LayoutDir>
   </PropertyGroup>
   <ItemGroup>
-    <AppXManifest Include="C:\Users\1848857\source\repos\1848857Cegepoutaouais\Projet_WinUI_CombatDonjon\Projet_WinUI_CombatDonjon\bin\x64\Debug\net8.0-windows10.0.19041.0\win-x64\AppxManifest.xml">
+    <AppXManifest Include="C:\Users\1848857\source\repos\Projet_WinUI_CombatDonjon\Projet_WinUI_CombatDonjon\bin\x64\Debug\net8.0-windows10.0.19041.0\win-x64\AppxManifest.xml">
       <PackagePath>AppxManifest.xml</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
     </AppXManifest>
   </ItemGroup>
   <ItemGroup>
-    <AppxPackagedFile Include="C:\Users\1848857\source\repos\1848857Cegepoutaouais\Projet_WinUI_CombatDonjon\Projet_WinUI_CombatDonjon\bin\x64\Debug\net8.0-windows10.0.19041.0\win-x64\Projet_WinUI_CombatDonjon.runtimeconfig.json">
+    <AppxPackagedFile Include="C:\Users\1848857\source\repos\Projet_WinUI_CombatDonjon\Projet_WinUI_CombatDonjon\bin\x64\Debug\net8.0-windows10.0.19041.0\win-x64\Projet_WinUI_CombatDonjon.runtimeconfig.json">
       <PackagePath>Projet_WinUI_CombatDonjon.runtimeconfig.json</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\1848857\source\repos\1848857Cegepoutaouais\Projet_WinUI_CombatDonjon\Projet_WinUI_CombatDonjon\obj\x64\Debug\net8.0-windows10.0.19041.0\win-x64\apphost.exe">
+    <AppxPackagedFile Include="C:\Users\1848857\source\repos\Projet_WinUI_CombatDonjon\Projet_WinUI_CombatDonjon\obj\x64\Debug\net8.0-windows10.0.19041.0\win-x64\apphost.exe">
       <PackagePath>Projet_WinUI_CombatDonjon.exe</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\1848857\source\repos\1848857Cegepoutaouais\Projet_WinUI_CombatDonjon\Projet_WinUI_CombatDonjon\obj\x64\Debug\net8.0-windows10.0.19041.0\win-x64\Projet_WinUI_CombatDonjon.dll">
+    <AppxPackagedFile Include="C:\Users\1848857\source\repos\Projet_WinUI_CombatDonjon\Projet_WinUI_CombatDonjon\obj\x64\Debug\net8.0-windows10.0.19041.0\win-x64\Projet_WinUI_CombatDonjon.dll">
       <PackagePath>Projet_WinUI_CombatDonjon.dll</PackagePath>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\1848857\.nuget\packages\microsoft.netcore.app.runtime.win-x64\8.0.27\runtimes\win-x64\lib\net8.0\Microsoft.CSharp.dll">
@@ -709,34 +709,34 @@
     <AppxPackagedFile Include="C:\Users\1848857\.nuget\packages\microsoft.web.webview2\1.0.3719.77\lib_manual\net8.0-windows10.0.17763.0\Microsoft.Web.WebView2.Core.Projection.dll">
       <PackagePath>Microsoft.Web.WebView2.Core.Projection.dll</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\1848857\source\repos\1848857Cegepoutaouais\Projet_WinUI_CombatDonjon\Projet_WinUI_CombatDonjon\bin\x64\Debug\net8.0-windows10.0.19041.0\win-x64\Projet_WinUI_CombatDonjon.deps.json">
+    <AppxPackagedFile Include="C:\Users\1848857\source\repos\Projet_WinUI_CombatDonjon\Projet_WinUI_CombatDonjon\bin\x64\Debug\net8.0-windows10.0.19041.0\win-x64\Projet_WinUI_CombatDonjon.deps.json">
       <PackagePath>Projet_WinUI_CombatDonjon.deps.json</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\1848857\source\repos\1848857Cegepoutaouais\Projet_WinUI_CombatDonjon\Projet_WinUI_CombatDonjon\Assets\LockScreenLogo.scale-200.png">
+    <AppxPackagedFile Include="C:\Users\1848857\source\repos\Projet_WinUI_CombatDonjon\Projet_WinUI_CombatDonjon\Assets\LockScreenLogo.scale-200.png">
       <PackagePath>Assets\LockScreenLogo.scale-200.png</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\1848857\source\repos\1848857Cegepoutaouais\Projet_WinUI_CombatDonjon\Projet_WinUI_CombatDonjon\Assets\SplashScreen.scale-200.png">
+    <AppxPackagedFile Include="C:\Users\1848857\source\repos\Projet_WinUI_CombatDonjon\Projet_WinUI_CombatDonjon\Assets\SplashScreen.scale-200.png">
       <PackagePath>Assets\SplashScreen.scale-200.png</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\1848857\source\repos\1848857Cegepoutaouais\Projet_WinUI_CombatDonjon\Projet_WinUI_CombatDonjon\Assets\Square150x150Logo.scale-200.png">
+    <AppxPackagedFile Include="C:\Users\1848857\source\repos\Projet_WinUI_CombatDonjon\Projet_WinUI_CombatDonjon\Assets\Square150x150Logo.scale-200.png">
       <PackagePath>Assets\Square150x150Logo.scale-200.png</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\1848857\source\repos\1848857Cegepoutaouais\Projet_WinUI_CombatDonjon\Projet_WinUI_CombatDonjon\Assets\Square44x44Logo.scale-200.png">
+    <AppxPackagedFile Include="C:\Users\1848857\source\repos\Projet_WinUI_CombatDonjon\Projet_WinUI_CombatDonjon\Assets\Square44x44Logo.scale-200.png">
       <PackagePath>Assets\Square44x44Logo.scale-200.png</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\1848857\source\repos\1848857Cegepoutaouais\Projet_WinUI_CombatDonjon\Projet_WinUI_CombatDonjon\Assets\Square44x44Logo.targetsize-24_altform-unplated.png">
+    <AppxPackagedFile Include="C:\Users\1848857\source\repos\Projet_WinUI_CombatDonjon\Projet_WinUI_CombatDonjon\Assets\Square44x44Logo.targetsize-24_altform-unplated.png">
       <PackagePath>Assets\Square44x44Logo.targetsize-24_altform-unplated.png</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\1848857\source\repos\1848857Cegepoutaouais\Projet_WinUI_CombatDonjon\Projet_WinUI_CombatDonjon\Assets\StoreLogo.png">
+    <AppxPackagedFile Include="C:\Users\1848857\source\repos\Projet_WinUI_CombatDonjon\Projet_WinUI_CombatDonjon\Assets\StoreLogo.png">
       <PackagePath>Assets\StoreLogo.png</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\1848857\source\repos\1848857Cegepoutaouais\Projet_WinUI_CombatDonjon\Projet_WinUI_CombatDonjon\Assets\Wide310x150Logo.scale-200.png">
+    <AppxPackagedFile Include="C:\Users\1848857\source\repos\Projet_WinUI_CombatDonjon\Projet_WinUI_CombatDonjon\Assets\Wide310x150Logo.scale-200.png">
       <PackagePath>Assets\Wide310x150Logo.scale-200.png</PackagePath>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\1848857\.nuget\packages\microsoft.web.webview2\1.0.3719.77\build\..\lib\Microsoft.Web.WebView2.Core.winmd">
       <PackagePath>Microsoft.Web.WebView2.Core.winmd</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\1848857\source\repos\1848857Cegepoutaouais\Projet_WinUI_CombatDonjon\Projet_WinUI_CombatDonjon\bin\x64\Debug\net8.0-windows10.0.19041.0\win-x64\resources.pri">
+    <AppxPackagedFile Include="C:\Users\1848857\source\repos\Projet_WinUI_CombatDonjon\Projet_WinUI_CombatDonjon\bin\x64\Debug\net8.0-windows10.0.19041.0\win-x64\resources.pri">
       <PackagePath>resources.pri</PackagePath>
     </AppxPackagedFile>
   </ItemGroup>

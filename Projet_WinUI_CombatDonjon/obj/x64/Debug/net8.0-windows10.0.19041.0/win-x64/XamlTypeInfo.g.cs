@@ -226,7 +226,7 @@ namespace Projet_WinUI_CombatDonjon.Projet_WinUI_CombatDonjon_XamlTypeInfo
         
         private void InitTypeTables()
         {
-            _typeNameTable = new string[15];
+            _typeNameTable = new string[20];
             _typeNameTable[0] = "Microsoft.UI.Xaml.Controls.XamlControlsResources";
             _typeNameTable[1] = "Microsoft.UI.Xaml.ResourceDictionary";
             _typeNameTable[2] = "Object";
@@ -236,14 +236,19 @@ namespace Projet_WinUI_CombatDonjon.Projet_WinUI_CombatDonjon_XamlTypeInfo
             _typeNameTable[6] = "Microsoft.UI.Composition.SystemBackdrops.MicaKind";
             _typeNameTable[7] = "System.Enum";
             _typeNameTable[8] = "System.ValueType";
-            _typeNameTable[9] = "Projet_WinUI_CombatDonjon.MainWindow";
-            _typeNameTable[10] = "Microsoft.UI.Xaml.Window";
-            _typeNameTable[11] = "Microsoft.UI.Xaml.Controls.TreeViewNode";
-            _typeNameTable[12] = "Microsoft.UI.Xaml.DependencyObject";
-            _typeNameTable[13] = "System.Collections.Generic.IList`1<Microsoft.UI.Xaml.Controls.TreeViewNode>";
-            _typeNameTable[14] = "Int32";
+            _typeNameTable[9] = "Projet_WinUI_CombatDonjon.Views.PageTitre";
+            _typeNameTable[10] = "Microsoft.UI.Xaml.Controls.Page";
+            _typeNameTable[11] = "Microsoft.UI.Xaml.Controls.UserControl";
+            _typeNameTable[12] = "Projet_WinUI_CombatDonjon.ViewModels.Pages.PageTitreViewModel";
+            _typeNameTable[13] = "Microsoft.UI.Xaml.Controls.Control";
+            _typeNameTable[14] = "Projet_WinUI_CombatDonjon.MainWindow";
+            _typeNameTable[15] = "Microsoft.UI.Xaml.Window";
+            _typeNameTable[16] = "Microsoft.UI.Xaml.Controls.TreeViewNode";
+            _typeNameTable[17] = "Microsoft.UI.Xaml.DependencyObject";
+            _typeNameTable[18] = "System.Collections.Generic.IList`1<Microsoft.UI.Xaml.Controls.TreeViewNode>";
+            _typeNameTable[19] = "Int32";
 
-            _typeTable = new global::System.Type[15];
+            _typeTable = new global::System.Type[20];
             _typeTable[0] = typeof(global::Microsoft.UI.Xaml.Controls.XamlControlsResources);
             _typeTable[1] = typeof(global::Microsoft.UI.Xaml.ResourceDictionary);
             _typeTable[2] = typeof(global::System.Object);
@@ -253,12 +258,17 @@ namespace Projet_WinUI_CombatDonjon.Projet_WinUI_CombatDonjon_XamlTypeInfo
             _typeTable[6] = typeof(global::Microsoft.UI.Composition.SystemBackdrops.MicaKind);
             _typeTable[7] = typeof(global::System.Enum);
             _typeTable[8] = typeof(global::System.ValueType);
-            _typeTable[9] = typeof(global::Projet_WinUI_CombatDonjon.MainWindow);
-            _typeTable[10] = typeof(global::Microsoft.UI.Xaml.Window);
-            _typeTable[11] = typeof(global::Microsoft.UI.Xaml.Controls.TreeViewNode);
-            _typeTable[12] = typeof(global::Microsoft.UI.Xaml.DependencyObject);
-            _typeTable[13] = typeof(global::System.Collections.Generic.IList<global::Microsoft.UI.Xaml.Controls.TreeViewNode>);
-            _typeTable[14] = typeof(global::System.Int32);
+            _typeTable[9] = typeof(global::Projet_WinUI_CombatDonjon.Views.PageTitre);
+            _typeTable[10] = typeof(global::Microsoft.UI.Xaml.Controls.Page);
+            _typeTable[11] = typeof(global::Microsoft.UI.Xaml.Controls.UserControl);
+            _typeTable[12] = typeof(global::Projet_WinUI_CombatDonjon.ViewModels.Pages.PageTitreViewModel);
+            _typeTable[13] = typeof(global::Microsoft.UI.Xaml.Controls.Control);
+            _typeTable[14] = typeof(global::Projet_WinUI_CombatDonjon.MainWindow);
+            _typeTable[15] = typeof(global::Microsoft.UI.Xaml.Window);
+            _typeTable[16] = typeof(global::Microsoft.UI.Xaml.Controls.TreeViewNode);
+            _typeTable[17] = typeof(global::Microsoft.UI.Xaml.DependencyObject);
+            _typeTable[18] = typeof(global::System.Collections.Generic.IList<global::Microsoft.UI.Xaml.Controls.TreeViewNode>);
+            _typeTable[19] = typeof(global::System.Int32);
         }
 
         private int LookupTypeIndexByName(string typeName)
@@ -295,16 +305,20 @@ namespace Projet_WinUI_CombatDonjon.Projet_WinUI_CombatDonjon_XamlTypeInfo
 
         private object Activate_0_XamlControlsResources() { return new global::Microsoft.UI.Xaml.Controls.XamlControlsResources(); }
         private object Activate_4_MicaBackdrop() { return new global::Microsoft.UI.Xaml.Media.MicaBackdrop(); }
-        private object Activate_9_MainWindow() { return new global::Projet_WinUI_CombatDonjon.MainWindow(); }
-        private object Activate_11_TreeViewNode() { return new global::Microsoft.UI.Xaml.Controls.TreeViewNode(); }
+        private object Activate_9_PageTitre() { return new global::Projet_WinUI_CombatDonjon.Views.PageTitre(); }
+        private object Activate_12_PageTitreViewModel() { return new global::Projet_WinUI_CombatDonjon.ViewModels.Pages.PageTitreViewModel(); }
+        private object Activate_14_MainWindow() { return new global::Projet_WinUI_CombatDonjon.MainWindow(); }
+        private object Activate_16_TreeViewNode() { return new global::Microsoft.UI.Xaml.Controls.TreeViewNode(); }
         private void StaticInitializer_0_XamlControlsResources() => global::System.Runtime.CompilerServices.RuntimeHelpers.RunClassConstructor(typeof(global::Microsoft.UI.Xaml.Controls.XamlControlsResources).TypeHandle);
         private void StaticInitializer_4_MicaBackdrop() => global::System.Runtime.CompilerServices.RuntimeHelpers.RunClassConstructor(typeof(global::Microsoft.UI.Xaml.Media.MicaBackdrop).TypeHandle);
         private void StaticInitializer_6_MicaKind() => global::System.Runtime.CompilerServices.RuntimeHelpers.RunClassConstructor(typeof(global::Microsoft.UI.Composition.SystemBackdrops.MicaKind).TypeHandle);
         private void StaticInitializer_7_Enum() => global::System.Runtime.CompilerServices.RuntimeHelpers.RunClassConstructor(typeof(global::System.Enum).TypeHandle);
         private void StaticInitializer_8_ValueType() => global::System.Runtime.CompilerServices.RuntimeHelpers.RunClassConstructor(typeof(global::System.ValueType).TypeHandle);
-        private void StaticInitializer_9_MainWindow() => global::System.Runtime.CompilerServices.RuntimeHelpers.RunClassConstructor(typeof(global::Projet_WinUI_CombatDonjon.MainWindow).TypeHandle);
-        private void StaticInitializer_11_TreeViewNode() => global::System.Runtime.CompilerServices.RuntimeHelpers.RunClassConstructor(typeof(global::Microsoft.UI.Xaml.Controls.TreeViewNode).TypeHandle);
-        private void StaticInitializer_13_IList() => global::System.Runtime.CompilerServices.RuntimeHelpers.RunClassConstructor(typeof(global::System.Collections.Generic.IList<global::Microsoft.UI.Xaml.Controls.TreeViewNode>).TypeHandle);
+        private void StaticInitializer_9_PageTitre() => global::System.Runtime.CompilerServices.RuntimeHelpers.RunClassConstructor(typeof(global::Projet_WinUI_CombatDonjon.Views.PageTitre).TypeHandle);
+        private void StaticInitializer_12_PageTitreViewModel() => global::System.Runtime.CompilerServices.RuntimeHelpers.RunClassConstructor(typeof(global::Projet_WinUI_CombatDonjon.ViewModels.Pages.PageTitreViewModel).TypeHandle);
+        private void StaticInitializer_14_MainWindow() => global::System.Runtime.CompilerServices.RuntimeHelpers.RunClassConstructor(typeof(global::Projet_WinUI_CombatDonjon.MainWindow).TypeHandle);
+        private void StaticInitializer_16_TreeViewNode() => global::System.Runtime.CompilerServices.RuntimeHelpers.RunClassConstructor(typeof(global::Microsoft.UI.Xaml.Controls.TreeViewNode).TypeHandle);
+        private void StaticInitializer_18_IList() => global::System.Runtime.CompilerServices.RuntimeHelpers.RunClassConstructor(typeof(global::System.Collections.Generic.IList<global::Microsoft.UI.Xaml.Controls.TreeViewNode>).TypeHandle);
         private void MapAdd_0_XamlControlsResources(object instance, object key, object item)
         {
             var collection = (global::System.Collections.Generic.IDictionary<global::System.Object, global::System.Object>)instance;
@@ -312,7 +326,7 @@ namespace Projet_WinUI_CombatDonjon.Projet_WinUI_CombatDonjon_XamlTypeInfo
             var newItem = (global::System.Object)item;
             collection.Add(newKey, newItem);
         }
-        private void VectorAdd_13_IList(object instance, object item)
+        private void VectorAdd_18_IList(object instance, object item)
         {
             var collection = (global::System.Collections.Generic.ICollection<global::Microsoft.UI.Xaml.Controls.TreeViewNode>)instance;
             var newItem = (global::Microsoft.UI.Xaml.Controls.TreeViewNode)item;
@@ -382,22 +396,51 @@ namespace Projet_WinUI_CombatDonjon.Projet_WinUI_CombatDonjon_XamlTypeInfo
                 xamlType = userType;
                 break;
 
-            case 9:   //  Projet_WinUI_CombatDonjon.MainWindow
-                userType = new global::Projet_WinUI_CombatDonjon.Projet_WinUI_CombatDonjon_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Microsoft.UI.Xaml.Window"));
-                userType.Activator = Activate_9_MainWindow;
-                userType.StaticInitializer = StaticInitializer_9_MainWindow;
+            case 9:   //  Projet_WinUI_CombatDonjon.Views.PageTitre
+                userType = new global::Projet_WinUI_CombatDonjon.Projet_WinUI_CombatDonjon_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Microsoft.UI.Xaml.Controls.Page"));
+                userType.Activator = Activate_9_PageTitre;
+                userType.StaticInitializer = StaticInitializer_9_PageTitre;
+                userType.AddMemberName("ViewModel");
                 userType.SetIsLocalType();
                 xamlType = userType;
                 break;
 
-            case 10:   //  Microsoft.UI.Xaml.Window
+            case 10:   //  Microsoft.UI.Xaml.Controls.Page
                 xamlType = new global::Projet_WinUI_CombatDonjon.Projet_WinUI_CombatDonjon_XamlTypeInfo.XamlSystemBaseType(typeName, type);
                 break;
 
-            case 11:   //  Microsoft.UI.Xaml.Controls.TreeViewNode
+            case 11:   //  Microsoft.UI.Xaml.Controls.UserControl
+                xamlType = new global::Projet_WinUI_CombatDonjon.Projet_WinUI_CombatDonjon_XamlTypeInfo.XamlSystemBaseType(typeName, type);
+                break;
+
+            case 12:   //  Projet_WinUI_CombatDonjon.ViewModels.Pages.PageTitreViewModel
+                userType = new global::Projet_WinUI_CombatDonjon.Projet_WinUI_CombatDonjon_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Microsoft.UI.Xaml.Controls.Control"));
+                userType.StaticInitializer = StaticInitializer_12_PageTitreViewModel;
+                userType.SetIsReturnTypeStub();
+                userType.SetIsLocalType();
+                xamlType = userType;
+                break;
+
+            case 13:   //  Microsoft.UI.Xaml.Controls.Control
+                xamlType = new global::Projet_WinUI_CombatDonjon.Projet_WinUI_CombatDonjon_XamlTypeInfo.XamlSystemBaseType(typeName, type);
+                break;
+
+            case 14:   //  Projet_WinUI_CombatDonjon.MainWindow
+                userType = new global::Projet_WinUI_CombatDonjon.Projet_WinUI_CombatDonjon_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Microsoft.UI.Xaml.Window"));
+                userType.Activator = Activate_14_MainWindow;
+                userType.StaticInitializer = StaticInitializer_14_MainWindow;
+                userType.SetIsLocalType();
+                xamlType = userType;
+                break;
+
+            case 15:   //  Microsoft.UI.Xaml.Window
+                xamlType = new global::Projet_WinUI_CombatDonjon.Projet_WinUI_CombatDonjon_XamlTypeInfo.XamlSystemBaseType(typeName, type);
+                break;
+
+            case 16:   //  Microsoft.UI.Xaml.Controls.TreeViewNode
                 userType = new global::Projet_WinUI_CombatDonjon.Projet_WinUI_CombatDonjon_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Microsoft.UI.Xaml.DependencyObject"));
-                userType.Activator = Activate_11_TreeViewNode;
-                userType.StaticInitializer = StaticInitializer_11_TreeViewNode;
+                userType.Activator = Activate_16_TreeViewNode;
+                userType.StaticInitializer = StaticInitializer_16_TreeViewNode;
                 userType.AddMemberName("Children");
                 userType.AddMemberName("Content");
                 userType.AddMemberName("Depth");
@@ -409,19 +452,19 @@ namespace Projet_WinUI_CombatDonjon.Projet_WinUI_CombatDonjon_XamlTypeInfo
                 xamlType = userType;
                 break;
 
-            case 12:   //  Microsoft.UI.Xaml.DependencyObject
+            case 17:   //  Microsoft.UI.Xaml.DependencyObject
                 xamlType = new global::Projet_WinUI_CombatDonjon.Projet_WinUI_CombatDonjon_XamlTypeInfo.XamlSystemBaseType(typeName, type);
                 break;
 
-            case 13:   //  System.Collections.Generic.IList`1<Microsoft.UI.Xaml.Controls.TreeViewNode>
+            case 18:   //  System.Collections.Generic.IList`1<Microsoft.UI.Xaml.Controls.TreeViewNode>
                 userType = new global::Projet_WinUI_CombatDonjon.Projet_WinUI_CombatDonjon_XamlTypeInfo.XamlUserType(this, typeName, type, null);
-                userType.StaticInitializer = StaticInitializer_13_IList;
-                userType.CollectionAdd = VectorAdd_13_IList;
+                userType.StaticInitializer = StaticInitializer_18_IList;
+                userType.CollectionAdd = VectorAdd_18_IList;
                 userType.SetIsReturnTypeStub();
                 xamlType = userType;
                 break;
 
-            case 14:   //  Int32
+            case 19:   //  Int32
                 xamlType = new global::Projet_WinUI_CombatDonjon.Projet_WinUI_CombatDonjon_XamlTypeInfo.XamlSystemBaseType(typeName, type);
                 break;
             }
@@ -503,52 +546,57 @@ namespace Projet_WinUI_CombatDonjon.Projet_WinUI_CombatDonjon_XamlTypeInfo
             var that = (global::Microsoft.UI.Xaml.Media.MicaBackdrop)instance;
             that.Kind = (global::Microsoft.UI.Composition.SystemBackdrops.MicaKind)Value;
         }
-        private object get_2_TreeViewNode_Children(object instance)
+        private object get_2_PageTitre_ViewModel(object instance)
+        {
+            var that = (global::Projet_WinUI_CombatDonjon.Views.PageTitre)instance;
+            return that.ViewModel;
+        }
+        private object get_3_TreeViewNode_Children(object instance)
         {
             var that = (global::Microsoft.UI.Xaml.Controls.TreeViewNode)instance;
             return that.Children;
         }
-        private object get_3_TreeViewNode_Content(object instance)
+        private object get_4_TreeViewNode_Content(object instance)
         {
             var that = (global::Microsoft.UI.Xaml.Controls.TreeViewNode)instance;
             return that.Content;
         }
-        private void set_3_TreeViewNode_Content(object instance, object Value)
+        private void set_4_TreeViewNode_Content(object instance, object Value)
         {
             var that = (global::Microsoft.UI.Xaml.Controls.TreeViewNode)instance;
             that.Content = (global::System.Object)Value;
         }
-        private object get_4_TreeViewNode_Depth(object instance)
+        private object get_5_TreeViewNode_Depth(object instance)
         {
             var that = (global::Microsoft.UI.Xaml.Controls.TreeViewNode)instance;
             return that.Depth;
         }
-        private object get_5_TreeViewNode_HasChildren(object instance)
+        private object get_6_TreeViewNode_HasChildren(object instance)
         {
             var that = (global::Microsoft.UI.Xaml.Controls.TreeViewNode)instance;
             return that.HasChildren;
         }
-        private object get_6_TreeViewNode_HasUnrealizedChildren(object instance)
+        private object get_7_TreeViewNode_HasUnrealizedChildren(object instance)
         {
             var that = (global::Microsoft.UI.Xaml.Controls.TreeViewNode)instance;
             return that.HasUnrealizedChildren;
         }
-        private void set_6_TreeViewNode_HasUnrealizedChildren(object instance, object Value)
+        private void set_7_TreeViewNode_HasUnrealizedChildren(object instance, object Value)
         {
             var that = (global::Microsoft.UI.Xaml.Controls.TreeViewNode)instance;
             that.HasUnrealizedChildren = (global::System.Boolean)Value;
         }
-        private object get_7_TreeViewNode_IsExpanded(object instance)
+        private object get_8_TreeViewNode_IsExpanded(object instance)
         {
             var that = (global::Microsoft.UI.Xaml.Controls.TreeViewNode)instance;
             return that.IsExpanded;
         }
-        private void set_7_TreeViewNode_IsExpanded(object instance, object Value)
+        private void set_8_TreeViewNode_IsExpanded(object instance, object Value)
         {
             var that = (global::Microsoft.UI.Xaml.Controls.TreeViewNode)instance;
             that.IsExpanded = (global::System.Boolean)Value;
         }
-        private object get_8_TreeViewNode_Parent(object instance)
+        private object get_9_TreeViewNode_Parent(object instance)
         {
             var that = (global::Microsoft.UI.Xaml.Controls.TreeViewNode)instance;
             return that.Parent;
@@ -575,50 +623,56 @@ namespace Projet_WinUI_CombatDonjon.Projet_WinUI_CombatDonjon_XamlTypeInfo
                 xamlMember.Getter = get_1_MicaBackdrop_Kind;
                 xamlMember.Setter = set_1_MicaBackdrop_Kind;
                 break;
+            case "Projet_WinUI_CombatDonjon.Views.PageTitre.ViewModel":
+                userType = (global::Projet_WinUI_CombatDonjon.Projet_WinUI_CombatDonjon_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Projet_WinUI_CombatDonjon.Views.PageTitre");
+                xamlMember = new global::Projet_WinUI_CombatDonjon.Projet_WinUI_CombatDonjon_XamlTypeInfo.XamlMember(this, "ViewModel", "Projet_WinUI_CombatDonjon.ViewModels.Pages.PageTitreViewModel");
+                xamlMember.Getter = get_2_PageTitre_ViewModel;
+                xamlMember.SetIsReadOnly();
+                break;
             case "Microsoft.UI.Xaml.Controls.TreeViewNode.Children":
                 userType = (global::Projet_WinUI_CombatDonjon.Projet_WinUI_CombatDonjon_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Microsoft.UI.Xaml.Controls.TreeViewNode");
                 xamlMember = new global::Projet_WinUI_CombatDonjon.Projet_WinUI_CombatDonjon_XamlTypeInfo.XamlMember(this, "Children", "System.Collections.Generic.IList`1<Microsoft.UI.Xaml.Controls.TreeViewNode>");
-                xamlMember.Getter = get_2_TreeViewNode_Children;
+                xamlMember.Getter = get_3_TreeViewNode_Children;
                 xamlMember.SetIsReadOnly();
                 break;
             case "Microsoft.UI.Xaml.Controls.TreeViewNode.Content":
                 userType = (global::Projet_WinUI_CombatDonjon.Projet_WinUI_CombatDonjon_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Microsoft.UI.Xaml.Controls.TreeViewNode");
                 xamlMember = new global::Projet_WinUI_CombatDonjon.Projet_WinUI_CombatDonjon_XamlTypeInfo.XamlMember(this, "Content", "Object");
                 xamlMember.SetIsDependencyProperty();
-                xamlMember.Getter = get_3_TreeViewNode_Content;
-                xamlMember.Setter = set_3_TreeViewNode_Content;
+                xamlMember.Getter = get_4_TreeViewNode_Content;
+                xamlMember.Setter = set_4_TreeViewNode_Content;
                 break;
             case "Microsoft.UI.Xaml.Controls.TreeViewNode.Depth":
                 userType = (global::Projet_WinUI_CombatDonjon.Projet_WinUI_CombatDonjon_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Microsoft.UI.Xaml.Controls.TreeViewNode");
                 xamlMember = new global::Projet_WinUI_CombatDonjon.Projet_WinUI_CombatDonjon_XamlTypeInfo.XamlMember(this, "Depth", "Int32");
                 xamlMember.SetIsDependencyProperty();
-                xamlMember.Getter = get_4_TreeViewNode_Depth;
+                xamlMember.Getter = get_5_TreeViewNode_Depth;
                 xamlMember.SetIsReadOnly();
                 break;
             case "Microsoft.UI.Xaml.Controls.TreeViewNode.HasChildren":
                 userType = (global::Projet_WinUI_CombatDonjon.Projet_WinUI_CombatDonjon_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Microsoft.UI.Xaml.Controls.TreeViewNode");
                 xamlMember = new global::Projet_WinUI_CombatDonjon.Projet_WinUI_CombatDonjon_XamlTypeInfo.XamlMember(this, "HasChildren", "Boolean");
                 xamlMember.SetIsDependencyProperty();
-                xamlMember.Getter = get_5_TreeViewNode_HasChildren;
+                xamlMember.Getter = get_6_TreeViewNode_HasChildren;
                 xamlMember.SetIsReadOnly();
                 break;
             case "Microsoft.UI.Xaml.Controls.TreeViewNode.HasUnrealizedChildren":
                 userType = (global::Projet_WinUI_CombatDonjon.Projet_WinUI_CombatDonjon_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Microsoft.UI.Xaml.Controls.TreeViewNode");
                 xamlMember = new global::Projet_WinUI_CombatDonjon.Projet_WinUI_CombatDonjon_XamlTypeInfo.XamlMember(this, "HasUnrealizedChildren", "Boolean");
-                xamlMember.Getter = get_6_TreeViewNode_HasUnrealizedChildren;
-                xamlMember.Setter = set_6_TreeViewNode_HasUnrealizedChildren;
+                xamlMember.Getter = get_7_TreeViewNode_HasUnrealizedChildren;
+                xamlMember.Setter = set_7_TreeViewNode_HasUnrealizedChildren;
                 break;
             case "Microsoft.UI.Xaml.Controls.TreeViewNode.IsExpanded":
                 userType = (global::Projet_WinUI_CombatDonjon.Projet_WinUI_CombatDonjon_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Microsoft.UI.Xaml.Controls.TreeViewNode");
                 xamlMember = new global::Projet_WinUI_CombatDonjon.Projet_WinUI_CombatDonjon_XamlTypeInfo.XamlMember(this, "IsExpanded", "Boolean");
                 xamlMember.SetIsDependencyProperty();
-                xamlMember.Getter = get_7_TreeViewNode_IsExpanded;
-                xamlMember.Setter = set_7_TreeViewNode_IsExpanded;
+                xamlMember.Getter = get_8_TreeViewNode_IsExpanded;
+                xamlMember.Setter = set_8_TreeViewNode_IsExpanded;
                 break;
             case "Microsoft.UI.Xaml.Controls.TreeViewNode.Parent":
                 userType = (global::Projet_WinUI_CombatDonjon.Projet_WinUI_CombatDonjon_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Microsoft.UI.Xaml.Controls.TreeViewNode");
                 xamlMember = new global::Projet_WinUI_CombatDonjon.Projet_WinUI_CombatDonjon_XamlTypeInfo.XamlMember(this, "Parent", "Microsoft.UI.Xaml.Controls.TreeViewNode");
-                xamlMember.Getter = get_8_TreeViewNode_Parent;
+                xamlMember.Getter = get_9_TreeViewNode_Parent;
                 xamlMember.SetIsReadOnly();
                 break;
             }
