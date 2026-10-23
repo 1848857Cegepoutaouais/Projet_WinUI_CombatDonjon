@@ -31,5 +31,17 @@ namespace Projet_WinUI_CombatDonjon.Views
 
             ViewModel = new PageTitreViewModel();
         }
+
+        // Fonction pour le boutton pour créer une nouvelle partie
+        private void Button_Nv_Partie(object sender, RoutedEventArgs e)
+        {
+            //TODO
+        }
+
+        // Fonction pour le boutton pour charger une partie
+        private void Button_Ch_Partie(object sender, RoutedEventArgs e)
+        {
+            //TODO
+        }
     }
 }

@@ -28,7 +28,7 @@
     <AppXManifest Include="C:\Users\1848857\source\repos\Projet_WinUI_CombatDonjon\Projet_WinUI_CombatDonjon\bin\x64\Debug\net8.0-windows10.0.19041.0\win-x64\AppxManifest.xml">
       <PackagePath>AppxManifest.xml</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2026-10-23T17:44:32.532</Modified>
+      <Modified>2026-10-23T18:53:59.249</Modified>
     </AppXManifest>
   </ItemGroup>
   <ItemGroup>
@@ -38,11 +38,11 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\1848857\source\repos\Projet_WinUI_CombatDonjon\Projet_WinUI_CombatDonjon\obj\x64\Debug\net8.0-windows10.0.19041.0\win-x64\apphost.exe">
       <PackagePath>Projet_WinUI_CombatDonjon.exe</PackagePath>
-      <Modified>2026-10-23T17:44:32.317</Modified>
+      <Modified>2026-10-23T18:53:58.802</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\1848857\source\repos\Projet_WinUI_CombatDonjon\Projet_WinUI_CombatDonjon\obj\x64\Debug\net8.0-windows10.0.19041.0\win-x64\Projet_WinUI_CombatDonjon.dll">
       <PackagePath>Projet_WinUI_CombatDonjon.dll</PackagePath>
-      <Modified>2026-10-23T17:44:32.314</Modified>
+      <Modified>2026-10-23T18:53:58.791</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\1848857\.nuget\packages\microsoft.netcore.app.runtime.win-x64\8.0.27\runtimes\win-x64\lib\net8.0\Microsoft.CSharp.dll">
       <PackagePath>Microsoft.CSharp.dll</PackagePath>
@@ -982,7 +982,7 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\1848857\source\repos\Projet_WinUI_CombatDonjon\Projet_WinUI_CombatDonjon\bin\x64\Debug\net8.0-windows10.0.19041.0\win-x64\resources.pri">
       <PackagePath>resources.pri</PackagePath>
-      <Modified>2026-10-23T17:44:32.417</Modified>
+      <Modified>2026-10-23T18:53:59.035</Modified>
     </AppxPackagedFile>
   </ItemGroup>
   <ItemGroup>

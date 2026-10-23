@@ -69,8 +69,6 @@ classDiagram
 	Joueur *-- ClasseJoueur
 	Combat --> Attaque
 ```
-	Combat --|> Attaque
-```
 
 ## Schémat Entité-Relation
 ```mermaid
@@ -79,21 +77,71 @@ classDiagram
     ORDER ||--|{ ORDER_ITEM : contains
     PRODUCT ||--o{ ORDER_ITEM : includes
     
-	Partie ||--|| Donjon : places
-	Donjon }|--|{ Biome : places
+	Partie ||--|| Donjon : "Possède (1:1)"
+	Partie ||--|| EquipeJoueur : "Possède (1:1)"
+	Donjon ||--|{ NivDonjon :"Contient (1:N)"
+	NivDonjon }|--|| Biome : "Possède (N:1)"
+	NivDonjon ||--o{ Combat : "Contient (1:N)"
+	EquipeJoueur |o--o{ Joueur : "1:N"
+	Combat ||--|| EquipeJoueur : "Possède (1:1)"
+	Combat ||--|{ MonstreCombat :"Possède (1:N)"
+	MonstreCombat }|--|| Monstre : ""
+	Monstre }|--|| Biome : "Possède (N:1)"
+
+
 
 	Partie {
 		int		PartieID
 		string	PartieNom
 		int		DonjonID
+		int		EquipeID
 	}
 
 	Donjon {
 		int		DonjonID
+		int		PartieID
+	}
+
+	NivDonjon {
+		int		NivDonjonID
+		int		BiomeID
 	}
 
 	Biome {
 		int		BiomeID
+	}
+
+	Combat {
+		int		CombatID
+		int		NivDonjonID
+		bool	Terminee
+	}
+
+	EquipeJoueur {
+		int		EquipeID
+		int		PartieID
+	}
+
+	Joueur {
+		int		JoueurID
+		int		EquipeID
+	}
+
+	Monstre {
+		int		MonstreID
+		int		BiomeID
+	}
+
+	MonstreCombat {
+		int		MCID
+		int		CombatID
+		int		MonstreID
+		decimal MonstrePV
+		bool	Mort
+	}
+
+	EquipeMonstre {
+		int		EQMonstreID
 	}
 	
 	CUSTOMER {
