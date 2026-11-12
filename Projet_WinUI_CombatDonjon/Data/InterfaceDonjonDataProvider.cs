@@ -12,13 +12,15 @@ using System.Runtime.InteropServices.WindowsRuntime;
 // To learn more about WinUI, the WinUI project structure,
 // and more about our project templates, see: http://aka.ms/winui-project-info.
 
-namespace Projet_WinUI_CombatDonjon.ViewModels.Pages
+namespace Projet_WinUI_CombatDonjon.Data
 {
-    public sealed partial class PageTitreViewModel : Control
+    public interface InterfaceDonjonDataProvider
     {
-        public PageTitreViewModel()
-        {
-            DefaultStyleKey = typeof(PageTitreViewModel);
-        }
+        // Méthodes de gestion des joueurs
+
+
+        // Méthodes de gestion des monstres
+
+        
     }
 }

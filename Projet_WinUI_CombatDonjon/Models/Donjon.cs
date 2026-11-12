@@ -6,7 +6,8 @@ using System.Threading.Tasks;
 
 namespace Projet_WinUI_CombatDonjon.Models
 {
-    internal class Donjon
+    public class Donjon
     {
+        public int DonjonId { get; set; }
     }
 }

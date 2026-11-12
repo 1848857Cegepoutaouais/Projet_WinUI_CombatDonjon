@@ -13,6 +13,6 @@
     <Window.SystemBackdrop>
         <MicaBackdrop />
     </Window.SystemBackdrop>
-
+    <!--  Mettre la navigation pour permettre de changer de page  -->
     <views:PageTitre />
 </Window>

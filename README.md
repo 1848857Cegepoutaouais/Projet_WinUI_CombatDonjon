@@ -89,8 +89,8 @@ classDiagram
 	Monstre }|--|| Biome : "Possède (N:1)"
 
 
-
-	Partie {
+	%% C'est la partie, il sert à géré la sauvegarde
+	Partie { 
 		int		PartieID
 		string	PartieNom
 		int		DonjonID
@@ -133,17 +133,19 @@ classDiagram
 	}
 
 	MonstreCombat {
-		int		MCID
-		int		CombatID
-		int		MonstreID
-		decimal MonstrePV
-		bool	Mort
+		int		MCID		
+		int		CombatID	
+		int		MonstreID	
+		decimal MonstrePV	
+		bool	Mort		
 	}
-
+	
+	
 	EquipeMonstre {
 		int		EQMonstreID
 	}
 	
+	%% test
 	CUSTOMER {
         string id
         string name

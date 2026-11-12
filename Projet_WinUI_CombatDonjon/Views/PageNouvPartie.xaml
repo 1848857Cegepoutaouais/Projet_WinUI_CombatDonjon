@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Page
+    x:Class="Projet_WinUI_CombatDonjon.Views.PageNouvPartie"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:local="using:Projet_WinUI_CombatDonjon.Views"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d">
+
+    <Grid>
+        <StackPanel
+            x:Name="BoiteNouvPartie"
+            HorizontalAlignment="Center"
+            VerticalAlignment="Center"
+            Background="#606060"
+            BorderBrush="#444444"
+            BorderThickness="5"
+            CornerRadius="100"
+            Spacing="20">
+            <StackPanel
+                Padding="20"
+                HorizontalAlignment="Center"
+                Spacing="20">
+                <TextBlock
+                    Margin="10,10,10,10"
+                    Padding="10"
+                    AutomationProperties.HeadingLevel="Level1"
+                    FontFamily="Bahnschrift"
+                    FontSize="52"
+                    FontWeight="Bold"
+                    Foreground="White"
+                    IsColorFontEnabled="True"
+                    Style="{StaticResource DisplayTextBlockStyle}"
+                    Text="Projet WinUI : Combat Donjon" />
+
+                <Button
+                    x:Name="Button_Nv_Perso"
+                    Width="200"
+                    Padding="10"
+                    HorizontalAlignment="Center"
+                    Background="#929292"
+                    BorderBrush="#444444"
+                    BorderThickness="2"
+                    Click="Button_Nv_Perso_Click"
+                    CornerRadius="25">
+                    <TextBlock
+                        FontSize="20"
+                        Foreground="White"
+                        Text="Nouvelle Partie" />
+                </Button>
+
+
+
+            </StackPanel>
+
+
+        </StackPanel>
+    </Grid>
+</Page>

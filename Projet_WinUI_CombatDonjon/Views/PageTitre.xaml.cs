@@ -6,8 +6,11 @@ using Microsoft.UI.Xaml.Input;
 using Microsoft.UI.Xaml.Media;
 using Microsoft.UI.Xaml.Navigation;
 using Projet_WinUI_CombatDonjon.ViewModels.Pages;
+using Projet_WinUI_CombatDonjon.Data;
+using Projet_WinUI_CombatDonjon.Models;
+using Projet_WinUI_CombatDonjon.ViewModels;
+using Projet_WinUI_CombatDonjon.Views;
 using System;
-using System.Collections.Generic;
 using System.IO;
 using System.Linq;
 using System.Runtime.InteropServices.WindowsRuntime;
@@ -24,24 +27,32 @@ namespace Projet_WinUI_CombatDonjon.Views
     /// </summary>
     public sealed partial class PageTitre : Page
     {
-        public PageTitreViewModel ViewModel { get; }
+        public VM_PageTitre ViewModel { get; }
         public PageTitre()
         {
             InitializeComponent();
 
-            ViewModel = new PageTitreViewModel();
+            ViewModel = new VM_PageTitre();
+        }
+
+        protected override void OnNavigatedFrom(NavigationEventArgs e)
+        {
+            base.OnNavigatedFrom(e);
         }
 
         // Fonction pour le boutton pour créer une nouvelle partie
-        private void Button_Nv_Partie(object sender, RoutedEventArgs e)
+        private void Button_Nv_Partie_Click(object sender, RoutedEventArgs e)
         {
             //TODO
+            Console.WriteLine("Buton_Nv_Partie");
+            Frame.Navigate(typeof(PageNouvPartie));
         }
 
         // Fonction pour le boutton pour charger une partie
-        private void Button_Ch_Partie(object sender, RoutedEventArgs e)
+        private void Button_Ch_Partie_Click(object sender, RoutedEventArgs e)
         {
             //TODO
+            Console.WriteLine("Button_Ch_Partie");
         }
     }
 }
