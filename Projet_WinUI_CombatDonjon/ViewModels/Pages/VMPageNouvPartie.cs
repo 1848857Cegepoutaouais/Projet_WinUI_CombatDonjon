@@ -71,5 +71,19 @@ namespace Projet_WinUI_CombatDonjon.ViewModels.Pages
                 PersoVMs.Add(new PersoVM(joueur));
             } 
         }
+
+        public void AjouterPerso(PersoVM persoVM)
+        {
+            _dataProvider.AjouterJoueur(new Joueur(persoVM.Nom, persoVM.Classe));
+        }
+
+        public void ModifierPerso(PersoVM persoVM)
+        {
+            if (persoVM == null)
+            {
+                return;
+            }
+            _dataProvider.ModifierJoueur(persoVM.Id, persoVM.Nom, persoVM.Classe);
+        }
     }
 }

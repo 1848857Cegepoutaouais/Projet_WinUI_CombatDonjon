@@ -13,7 +13,7 @@ namespace Projet_WinUI_CombatDonjon.Models
         public float MaxPv { get; set; }
 
         // Classe du joueur 
-        public ClasseJoueur Classe {  get; set; }
+        public ClasseJoueur Classe { get; set; }
 
         // Niveau du joueur 
         public int Niveau { get; set; }
@@ -23,7 +23,7 @@ namespace Projet_WinUI_CombatDonjon.Models
         /// </summary>
         /// <param name="nom"> Nom du personnage</param>
         /// <param name="classe"> Classe du personnage</param>
-        public Joueur(string nom = "", ClasseJoueur classe = null)
+        public Joueur(string nom, ClasseJoueur classe)
         {
             Nom = nom;
             Classe = classe;
@@ -51,5 +51,18 @@ namespace Projet_WinUI_CombatDonjon.Models
             MaxPv = Classe.Pv * Niveau;
         }
 
+        public Joueur()
+        {
+            Nom = "";
+            Classe = new Barbare();
+            Niveau = 1;
+            Pv = Classe.Pv * Niveau;
+            Attaque = Classe.Attaque * Niveau;
+            Defense = Classe.Defense * Niveau;
+            Esquive = Classe.Esquive * Niveau;
+            Acc = Classe.Acc * Niveau;
+            Xp = 0;
+            MaxPv = Classe.Pv * Niveau;
+        }
     }
 }

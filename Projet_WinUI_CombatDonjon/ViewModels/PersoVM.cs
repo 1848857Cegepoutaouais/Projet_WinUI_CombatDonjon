@@ -35,4 +35,17 @@ public class PersoVM : ValidableViewModel
             }
         }
     }
+
+    public ClasseJoueur Classe
+    {
+        get { return _joueur.Classe; }
+        set
+        {
+            if (_joueur?.Classe != value)
+            {
+                _joueur.Classe = value;
+                RaisePropertyChanged();
+            }
+        }
+    }
 }

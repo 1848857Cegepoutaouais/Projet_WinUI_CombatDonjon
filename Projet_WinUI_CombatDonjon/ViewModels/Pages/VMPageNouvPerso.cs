@@ -14,11 +14,12 @@ using System.Runtime.InteropServices.WindowsRuntime;
 
 namespace Projet_WinUI_CombatDonjon.ViewModels.Pages
 {
-    public sealed partial class VM_Page_NouvPerso : Control
+    public sealed partial class VMPageNouvPerso : ViewModelBase
     {
-        public VM_Page_NouvPerso()
+        public VMPageNouvPerso()
         {
-            DefaultStyleKey = typeof(VM_Page_NouvPerso);
+            //TODO
+            //DefaultStyleKey = typeof(VMPageNouvPerso);
         }
     }
 }

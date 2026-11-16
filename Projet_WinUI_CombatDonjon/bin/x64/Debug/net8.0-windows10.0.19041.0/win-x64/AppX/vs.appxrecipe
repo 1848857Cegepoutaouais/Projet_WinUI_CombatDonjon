@@ -28,7 +28,7 @@
     <AppXManifest Include="C:\Users\1848857\source\repos\1848857Cegepoutaouais\Projet_WinUI_CombatDonjon\Projet_WinUI_CombatDonjon\bin\x64\Debug\net8.0-windows10.0.19041.0\win-x64\AppxManifest.xml">
       <PackagePath>AppxManifest.xml</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2026-11-16T18:06:24.388</Modified>
+      <Modified>2026-11-16T20:58:15.499</Modified>
     </AppXManifest>
   </ItemGroup>
   <ItemGroup>
@@ -38,11 +38,11 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\1848857\source\repos\1848857Cegepoutaouais\Projet_WinUI_CombatDonjon\Projet_WinUI_CombatDonjon\obj\x64\Debug\net8.0-windows10.0.19041.0\win-x64\apphost.exe">
       <PackagePath>Projet_WinUI_CombatDonjon.exe</PackagePath>
-      <Modified>2026-11-16T18:06:23.497</Modified>
+      <Modified>2026-11-16T20:58:15.153</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\1848857\source\repos\1848857Cegepoutaouais\Projet_WinUI_CombatDonjon\Projet_WinUI_CombatDonjon\obj\x64\Debug\net8.0-windows10.0.19041.0\win-x64\Projet_WinUI_CombatDonjon.dll">
       <PackagePath>Projet_WinUI_CombatDonjon.dll</PackagePath>
-      <Modified>2026-11-16T18:06:23.484</Modified>
+      <Modified>2026-11-16T20:58:15.142</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\1848857\.nuget\packages\microsoft.netcore.app.runtime.win-x64\8.0.27\runtimes\win-x64\lib\net8.0\Microsoft.CSharp.dll">
       <PackagePath>Microsoft.CSharp.dll</PackagePath>
@@ -946,7 +946,7 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\1848857\source\repos\1848857Cegepoutaouais\Projet_WinUI_CombatDonjon\Projet_WinUI_CombatDonjon\bin\x64\Debug\net8.0-windows10.0.19041.0\win-x64\Projet_WinUI_CombatDonjon.deps.json">
       <PackagePath>Projet_WinUI_CombatDonjon.deps.json</PackagePath>
-      <Modified>2026-11-16T18:06:23.837</Modified>
+      <Modified>2026-11-16T20:41:37.668</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\1848857\source\repos\1848857Cegepoutaouais\Projet_WinUI_CombatDonjon\Projet_WinUI_CombatDonjon\Assets\LockScreenLogo.scale-200.png">
       <PackagePath>Assets\LockScreenLogo.scale-200.png</PackagePath>
@@ -982,7 +982,7 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\1848857\source\repos\1848857Cegepoutaouais\Projet_WinUI_CombatDonjon\Projet_WinUI_CombatDonjon\bin\x64\Debug\net8.0-windows10.0.19041.0\win-x64\resources.pri">
       <PackagePath>resources.pri</PackagePath>
-      <Modified>2026-11-16T18:06:24.053</Modified>
+      <Modified>2026-11-16T20:41:37.872</Modified>
     </AppxPackagedFile>
   </ItemGroup>
   <ItemGroup>

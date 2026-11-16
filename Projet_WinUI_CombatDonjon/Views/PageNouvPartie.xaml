@@ -35,7 +35,11 @@
                     Style="{StaticResource DisplayTextBlockStyle}"
                     Text="Projet WinUI : Combat Donjon" />
 
-                <ListView AutomationProperties.Name="Liste des Personnages" ItemsSource="{x:Bind ViewModel.persoVMs}">
+
+                <ListView
+                    AutomationProperties.Name="Liste des Personnages"
+                    ItemsSource="{x:Bind ViewModel.PersoVMs, Mode=OneWay}"
+                    SelectedItem="{x:Bind ViewModel.PersoSelect, Mode=TwoWay}">
                     <ListView.ItemTemplate>
                         <DataTemplate x:DataType="viewmodels:PersoVM">
                             <TextBlock
@@ -46,6 +50,10 @@
                         </DataTemplate>
                     </ListView.ItemTemplate>
                 </ListView>
+                <StackPanel Orientation="Horizontal" Spacing="8">
+                    <Button Click="Button_Nv_Perso_Click" Content="Nouveau Personnage" />
+                    <Button Click="Button_Modif_Perso_Click" Content="Modifier le personnage" />
+                </StackPanel>
 
 
                 <Button

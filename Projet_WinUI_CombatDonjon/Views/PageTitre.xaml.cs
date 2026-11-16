@@ -27,12 +27,12 @@ namespace Projet_WinUI_CombatDonjon.Views
     /// </summary>
     public sealed partial class PageTitre : Page
     {
-        public VM_PageTitre ViewModel { get; }
+        public VMPageTitre ViewModel { get; }
         public PageTitre()
         {
             InitializeComponent();
 
-            ViewModel = new VM_PageTitre();
+            ViewModel = new VMPageTitre();
         }
 
         protected override void OnNavigatedFrom(NavigationEventArgs e)

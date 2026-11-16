@@ -33,7 +33,7 @@ namespace Projet_WinUI_CombatDonjon.Views
         {
             ViewModel = new VMPageNouvPartie(new DonjonDataProvider());
             InitializeComponent();
-            ViewModel.Char
+            ViewModel.ChargerDonnees();
         }
 
         protected override void OnNavigatedTo(NavigationEventArgs e)
@@ -43,7 +43,11 @@ namespace Projet_WinUI_CombatDonjon.Views
             {
                 if (persoVM.Id == 0) // C'est un nouveau perso, donc on l'ajoute
                 {
-                    ViewModel.
+                    ViewModel.AjouterPerso(persoVM);
+                }
+                else
+                {
+                    ViewModel.ModifierPerso(persoVM);
                 }
             }
         }
@@ -51,6 +55,16 @@ namespace Projet_WinUI_CombatDonjon.Views
         private void Button_Nv_Perso_Click(object sender, RoutedEventArgs e)
         {
             Frame.Navigate(typeof(DialogNouvPerso));
+        }
+
+        private void Button_Modif_Perso_Click(object sender, RoutedEventArgs e)
+        {
+            if (ViewModel.PersoSelect is null)
+            {
+                return;
+            }
+
+            Frame.Navigate(typeof(VMPageNouvPerso), ViewModel.PersoSelect);
         }
     }
 }
