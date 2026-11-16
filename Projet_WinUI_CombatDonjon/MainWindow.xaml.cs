@@ -29,7 +29,7 @@ namespace Projet_WinUI_CombatDonjon
             InitializeComponent();
         }
 
-       /* private void NavView_SelectionChanged(
+        private void NavView_SelectionChanged(
     NavigationView sender, NavigationViewSelectionChangedEventArgs args)
         {
             if (args.SelectedItemContainer != null)
@@ -39,7 +39,7 @@ namespace Projet_WinUI_CombatDonjon
             }
         }
 
-       /* private void NavView_Navigate(
+        private void NavView_Navigate(
             Type navPageType, NavigationTransitionInfo transitionInfo)
         {
             if (navPageType is not null)
@@ -91,6 +91,6 @@ namespace Projet_WinUI_CombatDonjon
         {
             throw new Exception("Impossible de charger la page " +
                 e.SourcePageType.FullName);
-        }*/
+        }
     }
 }

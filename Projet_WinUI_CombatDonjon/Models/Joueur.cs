@@ -8,6 +8,7 @@ namespace Projet_WinUI_CombatDonjon.Models
 {
     public class Joueur : Acteur
     {
+        public int Id { get; set; }
         // Points de vie maximum du joueur pour ne pas pouvoir guérir plus que les points de vie de départ
         public float MaxPv { get; set; }
 
@@ -22,7 +23,7 @@ namespace Projet_WinUI_CombatDonjon.Models
         /// </summary>
         /// <param name="nom"> Nom du personnage</param>
         /// <param name="classe"> Classe du personnage</param>
-        public Joueur(string nom, ClasseJoueur classe)
+        public Joueur(string nom = "", ClasseJoueur classe = null)
         {
             Nom = nom;
             Classe = classe;
@@ -49,5 +50,6 @@ namespace Projet_WinUI_CombatDonjon.Models
             Niveau = niveau;
             MaxPv = Classe.Pv * Niveau;
         }
+
     }
 }

@@ -4,6 +4,7 @@ using Microsoft.UI.Xaml.Data;
 using Microsoft.UI.Xaml.Documents;
 using Microsoft.UI.Xaml.Input;
 using Microsoft.UI.Xaml.Media;
+using Projet_WinUI_CombatDonjon.Models;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -17,7 +18,10 @@ namespace Projet_WinUI_CombatDonjon.Data
     public interface InterfaceDonjonDataProvider
     {
         // Méthodes de gestion des joueurs
-
+        List<Joueur> GetJoueurs();
+        void AjouterJoueur(Joueur joueur);
+        void SupprimerJoueur(int joueurId);
+        void ModifierJoueur(int id, string nouvNom, ClasseJoueur nouvClasse);
 
         // Méthodes de gestion des monstres
 

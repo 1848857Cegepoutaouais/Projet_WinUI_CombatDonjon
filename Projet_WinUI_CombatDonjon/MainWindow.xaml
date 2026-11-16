@@ -10,9 +10,39 @@
     Title="Projet_WinUI_CombatDonjon"
     mc:Ignorable="d">
 
-    <Window.SystemBackdrop>
-        <MicaBackdrop />
-    </Window.SystemBackdrop>
-    <!--  Mettre la navigation pour permettre de changer de page  -->
-    <views:PageTitre />
+    <NavigationView
+        x:Name="NavView"
+        AlwaysShowHeader="False"
+        BackRequested="NavView_BackRequested"
+        IsPaneVisible="False"
+        IsSettingsVisible="False"
+        PaneDisplayMode="LeftCompact"
+        SelectionChanged="NavView_SelectionChanged">
+
+        <NavigationView.MenuItems>
+            <!--  Tag : nom de la classe de la page  -->
+            <NavigationViewItem
+                Content="Page Titre"
+                IsSelected="True"
+                Tag="Projet_WinUI_CombatDonjon.Views.PageTitre">
+                <NavigationViewItem.Icon>
+                    <FontIcon Glyph="&#xEA8A;" />
+                </NavigationViewItem.Icon>
+            </NavigationViewItem>
+
+            <NavigationViewItem Content="Nouvelle Partie" Tag="Projet_WinUI_CombatDonjon.Views.PageNouvPartie">
+                <!--  Utilisation d'une icône personnalisée  -->
+                <NavigationViewItem.Icon>
+                    <SymbolIcon Symbol="People" />
+                </NavigationViewItem.Icon>
+            </NavigationViewItem>
+        </NavigationView.MenuItems>
+
+        <Frame
+            x:Name="ContentFrame"
+            Background="Black"
+            Navigated="ContentFrame_Navigated"
+            NavigationFailed="ContentFrame_NavigationFailed" />
+
+    </NavigationView>
 </Window>

@@ -11,6 +11,9 @@
     <None Update="Package.appxmanifest">
       <SubType>Designer</SubType>
     </None>
+    <None Update="Themes\Generic.xaml">
+      <SubType>Designer</SubType>
+    </None>
     <Page Update="Views\DialogNouvPerso.xaml">
       <SubType>Designer</SubType>
     </Page>

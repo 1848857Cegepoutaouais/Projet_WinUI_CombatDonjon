@@ -18,6 +18,9 @@
     <None Remove="Views\PageNouvPartie.xaml" />
     <None Remove="Views\PageTitre.xaml" />
   </ItemGroup>
+  <ItemGroup>
+    <Page Remove="Themes\Generic.xaml" />
+  </ItemGroup>
 
   <ItemGroup>
     <Content Include="Assets\SplashScreen.scale-200.png" />
@@ -51,7 +54,9 @@
     </Page>
   </ItemGroup>
   <ItemGroup>
-    <Folder Include="Themes\" />
+    <None Update="Themes\Generic.xaml">
+      <Generator>MSBuild:Compile</Generator>
+    </None>
   </ItemGroup>
   <ItemGroup>
     <Page Update="Views\DialogNouvPerso.xaml">

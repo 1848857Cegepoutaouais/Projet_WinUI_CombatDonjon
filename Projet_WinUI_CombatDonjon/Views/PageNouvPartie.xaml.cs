@@ -28,14 +28,24 @@ namespace Projet_WinUI_CombatDonjon.Views
     /// </summary>
     public sealed partial class PageNouvPartie : Page
     {
+        public VMPageNouvPartie ViewModel { get; }
         public PageNouvPartie()
         {
+            ViewModel = new VMPageNouvPartie(new DonjonDataProvider());
             InitializeComponent();
+            ViewModel.Char
         }
 
-        protected override void OnNavigatedFrom(NavigationEventArgs e)
+        protected override void OnNavigatedTo(NavigationEventArgs e)
         {
             base.OnNavigatedFrom(e);
+            if (e.Parameter is PersoVM persoVM)
+            {
+                if (persoVM.Id == 0) // C'est un nouveau perso, donc on l'ajoute
+                {
+                    ViewModel.
+                }
+            }
         }
 
         private void Button_Nv_Perso_Click(object sender, RoutedEventArgs e)
