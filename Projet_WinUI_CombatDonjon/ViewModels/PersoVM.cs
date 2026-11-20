@@ -1,4 +1,4 @@
-using Projet_WinUI_CombatDonjon.Models;
+using CombatDonjon.Data.Models;
 using System.Collections.ObjectModel;
 using System.ComponentModel.DataAnnotations;
 
@@ -41,7 +41,7 @@ public class PersoVM : ValidableViewModel
         get { return _joueur.Classe; }
         set
         {
-            if (_joueur?.Classe != value)
+            if (_joueur.Classe != value)
             {
                 _joueur.Classe = value;
                 RaisePropertyChanged();

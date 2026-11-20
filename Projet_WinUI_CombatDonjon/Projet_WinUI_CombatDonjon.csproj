@@ -1,7 +1,7 @@
 <Project Sdk="Microsoft.NET.Sdk">
   <PropertyGroup>
     <OutputType>WinExe</OutputType>
-    <TargetFramework>net8.0-windows10.0.19041.0</TargetFramework>
+    <TargetFramework>net10.0-windows10.0.19041.0</TargetFramework>
     <TargetPlatformMinVersion>10.0.17763.0</TargetPlatformMinVersion>
     <RootNamespace>Projet_WinUI_CombatDonjon</RootNamespace>
     <ApplicationManifest>app.manifest</ApplicationManifest>
@@ -14,7 +14,8 @@
     <Nullable>enable</Nullable>
   </PropertyGroup>
   <ItemGroup>
-    <None Remove="Views\DialogNouvPerso.xaml" />
+    <None Remove="Views\PageChargerPartie.xaml" />
+    <None Remove="Views\PageCombat.xaml" />
     <None Remove="Views\PageNouvPartie.xaml" />
     <None Remove="Views\PageTitre.xaml" />
   </ItemGroup>
@@ -49,6 +50,9 @@
     <PackageReference Include="Microsoft.WindowsAppSDK" Version="2.5.1" />
   </ItemGroup>
   <ItemGroup>
+    <ProjectReference Include="..\CombatDonjon.Data\CombatDonjon.Data.csproj" />
+  </ItemGroup>
+  <ItemGroup>
     <Page Update="Views\PageTitre.xaml">
       <Generator>MSBuild:Compile</Generator>
     </Page>
@@ -57,9 +61,15 @@
     <None Update="Themes\Generic.xaml">
       <Generator>MSBuild:Compile</Generator>
     </None>
+    <Page Update="Views\PageCombat.xaml">
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Update="Views\PageChargerPartie.xaml">
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
   </ItemGroup>
   <ItemGroup>
-    <Page Update="Views\DialogNouvPerso.xaml">
+    <Page Update="Views\PageNouvPerso.xaml">
       <Generator>MSBuild:Compile</Generator>
     </Page>
   </ItemGroup>

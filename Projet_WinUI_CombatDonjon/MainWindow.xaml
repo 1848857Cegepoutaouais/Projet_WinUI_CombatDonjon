@@ -30,10 +30,32 @@
                 </NavigationViewItem.Icon>
             </NavigationViewItem>
 
+            <!--  Page de création de la partie  -->
             <NavigationViewItem Content="Nouvelle Partie" Tag="Projet_WinUI_CombatDonjon.Views.PageNouvPartie">
                 <!--  Utilisation d'une icône personnalisée  -->
                 <NavigationViewItem.Icon>
                     <SymbolIcon Symbol="People" />
+                </NavigationViewItem.Icon>
+            </NavigationViewItem>
+
+            <!--  Page de création de personnage  -->
+            <NavigationViewItem Content="Nouveau Perso" Tag="Projet_WinUI_CombatDonjon.Views.PageNouvPerso">
+                <NavigationViewItem.Icon>
+                    <FontIcon Glyph="&#xEA8A;" />
+                </NavigationViewItem.Icon>
+            </NavigationViewItem>
+
+            <!--  Page de chargement de parties  -->
+            <NavigationViewItem Content="Charger une Partie" Tag="Projet_WinUI_CombatDonjon.Views.PageChargerPartie">
+                <NavigationViewItem.Icon>
+                    <FontIcon Glyph="&#xEA8A;" />
+                </NavigationViewItem.Icon>
+            </NavigationViewItem>
+
+            <!--  Page de Combat  -->
+            <NavigationViewItem Content="Page de Combat" Tag="Projet_WinUI_CombatDonjon.Views.PageCombat">
+                <NavigationViewItem.Icon>
+                    <FontIcon Glyph="&#xEA8A;" />
                 </NavigationViewItem.Icon>
             </NavigationViewItem>
         </NavigationView.MenuItems>

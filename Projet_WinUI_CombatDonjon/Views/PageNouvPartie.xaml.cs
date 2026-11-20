@@ -1,22 +1,10 @@
 using Microsoft.UI.Xaml;
 using Microsoft.UI.Xaml.Controls;
-using Microsoft.UI.Xaml.Controls.Primitives;
-using Microsoft.UI.Xaml.Data;
-using Microsoft.UI.Xaml.Input;
-using Microsoft.UI.Xaml.Media;
 using Microsoft.UI.Xaml.Navigation;
 using Projet_WinUI_CombatDonjon.ViewModels.Pages;
-using Projet_WinUI_CombatDonjon.Data;
-using Projet_WinUI_CombatDonjon.Models;
 using Projet_WinUI_CombatDonjon.ViewModels;
-using Projet_WinUI_CombatDonjon.Views;
+using CombatDonjon.Data.Data;
 using System;
-using System.Collections.Generic;
-using System.IO;
-using System.Linq;
-using System.Runtime.InteropServices.WindowsRuntime;
-using Windows.Foundation;
-using Windows.Foundation.Collections;
 
 // To learn more about WinUI, the WinUI project structure,
 // and more about our project templates, see: http://aka.ms/winui-project-info.
@@ -38,7 +26,7 @@ namespace Projet_WinUI_CombatDonjon.Views
 
         protected override void OnNavigatedTo(NavigationEventArgs e)
         {
-            base.OnNavigatedFrom(e);
+            base.OnNavigatedTo(e);
             if (e.Parameter is PersoVM persoVM)
             {
                 if (persoVM.Id == 0) // C'est un nouveau perso, donc on l'ajoute
@@ -54,7 +42,7 @@ namespace Projet_WinUI_CombatDonjon.Views
 
         private void Button_Nv_Perso_Click(object sender, RoutedEventArgs e)
         {
-            Frame.Navigate(typeof(DialogNouvPerso));
+            Frame.Navigate(typeof(PageNouvPerso));
         }
 
         private void Button_Modif_Perso_Click(object sender, RoutedEventArgs e)
@@ -65,6 +53,17 @@ namespace Projet_WinUI_CombatDonjon.Views
             }
 
             Frame.Navigate(typeof(VMPageNouvPerso), ViewModel.PersoSelect);
+        }
+
+        private void Button_nv_PersoD_Click(object sender, RoutedEventArgs e)
+        {
+            Frame.Navigate(typeof(PageNouvPerso));
+        }
+
+        private void Button_Nv_Partie_Fin_Click(object sender, RoutedEventArgs e)
+        {
+            throw new NotImplementedException();
+            Frame.Navigate(typeof(PageNouvPerso));
         }
     }
 }

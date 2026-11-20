@@ -5,11 +5,6 @@ using Microsoft.UI.Xaml.Data;
 using Microsoft.UI.Xaml.Input;
 using Microsoft.UI.Xaml.Media;
 using Microsoft.UI.Xaml.Navigation;
-using Projet_WinUI_CombatDonjon.ViewModels.Pages;
-using Projet_WinUI_CombatDonjon.Data;
-using Projet_WinUI_CombatDonjon.Models;
-using Projet_WinUI_CombatDonjon.ViewModels;
-using Projet_WinUI_CombatDonjon.Views;
 using System;
 using System.Collections.Generic;
 using System.IO;
@@ -26,16 +21,11 @@ namespace Projet_WinUI_CombatDonjon.Views
     /// <summary>
     /// An empty page that can be used on its own or navigated to within a Frame.
     /// </summary>
-    public sealed partial class DialogNouvPerso : Page
+    public sealed partial class PageChargerPartie : Page
     {
-        public DialogNouvPerso()
+        public PageChargerPartie()
         {
             InitializeComponent();
-        }
-
-        protected override void OnNavigatedFrom(NavigationEventArgs e)
-        {
-            base.OnNavigatedFrom(e);
         }
     }
 }
