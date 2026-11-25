@@ -1,6 +1,6 @@
 using System.Collections.ObjectModel;
-using CombatDonjon.Data.Data;
-using CombatDonjon.Data.Models;
+using Projet_WinUI_CombatDonjon.Data.Data;
+using Projet_WinUI_CombatDonjon.Data.Models;
 
 
 // To learn more about WinUI, the WinUI project structure,

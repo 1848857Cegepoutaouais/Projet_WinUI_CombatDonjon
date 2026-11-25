@@ -4,7 +4,7 @@
     <Platform Name="x64" />
     <Platform Name="x86" />
   </Configurations>
-  <Project Path="CombatDonjon.Data/CombatDonjon.Data.csproj" Id="a932c5d0-3f40-4d88-b0cd-c0579e1857cd" />
+  <Project Path="CombatDonjon.Data/Projet_WinUI_CombatDonjon.Data.csproj" Id="a932c5d0-3f40-4d88-b0cd-c0579e1857cd" />
   <Project Path="Projet_WinUI_CombatDonjon/Projet_WinUI_CombatDonjon.csproj">
     <Platform Solution="*|ARM64" Project="ARM64" />
     <Platform Solution="*|x64" Project="x64" />

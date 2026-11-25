@@ -1,0 +1,13 @@
+C:\Users\Travail\source\repos\Projet_WinUI_CombatDonjon\CombatDonjon.Data\bin\Debug\net10.0\CombatDonjon.Data.deps.json
+C:\Users\Travail\source\repos\Projet_WinUI_CombatDonjon\CombatDonjon.Data\bin\Debug\net10.0\CombatDonjon.Data.dll
+C:\Users\Travail\source\repos\Projet_WinUI_CombatDonjon\CombatDonjon.Data\bin\Debug\net10.0\CombatDonjon.Data.pdb
+C:\Users\Travail\source\repos\Projet_WinUI_CombatDonjon\CombatDonjon.Data\obj\Debug\net10.0\CombatDonjon.Data.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Travail\source\repos\Projet_WinUI_CombatDonjon\CombatDonjon.Data\obj\Debug\net10.0\CombatDonjon.Data.AssemblyInfoInputs.cache
+C:\Users\Travail\source\repos\Projet_WinUI_CombatDonjon\CombatDonjon.Data\obj\Debug\net10.0\CombatDonjon.Data.AssemblyInfo.cs
+C:\Users\Travail\source\repos\Projet_WinUI_CombatDonjon\CombatDonjon.Data\obj\Debug\net10.0\CombatDonjon.Data.csproj.CoreCompileInputs.cache
+C:\Users\Travail\source\repos\Projet_WinUI_CombatDonjon\CombatDonjon.Data\obj\Debug\net10.0\CombatDonjon.Data.sourcelink.json
+C:\Users\Travail\source\repos\Projet_WinUI_CombatDonjon\CombatDonjon.Data\obj\Debug\net10.0\CombatDonjon.Data.dll
+C:\Users\Travail\source\repos\Projet_WinUI_CombatDonjon\CombatDonjon.Data\obj\Debug\net10.0\refint\CombatDonjon.Data.dll
+C:\Users\Travail\source\repos\Projet_WinUI_CombatDonjon\CombatDonjon.Data\obj\Debug\net10.0\CombatDonjon.Data.pdb
+C:\Users\Travail\source\repos\Projet_WinUI_CombatDonjon\CombatDonjon.Data\obj\Debug\net10.0\ref\CombatDonjon.Data.dll
+C:\Users\Travail\source\repos\Projet_WinUI_CombatDonjon\CombatDonjon.Data\obj\Debug\net10.0\CombatDo.3998C646.Up2Date

@@ -1,7 +1,7 @@
 // To learn more about WinUI, the WinUI project structure,
 // and more about our project templates, see: http://aka.ms/winui-project-info.
 
-using CombatDonjon.Data.Models;
+using Projet_WinUI_CombatDonjon.Data.Models;
 
 namespace Projet_WinUI_CombatDonjon.ViewModels
 {

@@ -1,6 +1,6 @@
-﻿using CombatDonjon.Data.Models.Classes;
+﻿using Projet_WinUI_CombatDonjon.Data.Models.Classes;
 
-namespace CombatDonjon.Data.Models
+namespace Projet_WinUI_CombatDonjon.Data.Models
 {
     public class ClasseJoueur
     {

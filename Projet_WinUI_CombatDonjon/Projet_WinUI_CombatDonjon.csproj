@@ -50,7 +50,7 @@
     <PackageReference Include="Microsoft.WindowsAppSDK" Version="2.5.1" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\CombatDonjon.Data\CombatDonjon.Data.csproj" />
+    <ProjectReference Include="..\CombatDonjon.Data\Projet_WinUI_CombatDonjon.Data.csproj" />
   </ItemGroup>
   <ItemGroup>
     <Page Update="Views\PageTitre.xaml">

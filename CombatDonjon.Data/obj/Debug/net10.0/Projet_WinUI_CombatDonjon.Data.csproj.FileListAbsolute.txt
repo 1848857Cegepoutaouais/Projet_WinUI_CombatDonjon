@@ -1,0 +1,5 @@
+C:\Users\Travail\source\repos\Projet_WinUI_CombatDonjon\CombatDonjon.Data\obj\Debug\net10.0\Projet_WinUI_CombatDonjon.Data.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Travail\source\repos\Projet_WinUI_CombatDonjon\CombatDonjon.Data\obj\Debug\net10.0\Projet_WinUI_CombatDonjon.Data.AssemblyInfoInputs.cache
+C:\Users\Travail\source\repos\Projet_WinUI_CombatDonjon\CombatDonjon.Data\obj\Debug\net10.0\Projet_WinUI_CombatDonjon.Data.AssemblyInfo.cs
+C:\Users\Travail\source\repos\Projet_WinUI_CombatDonjon\CombatDonjon.Data\obj\Debug\net10.0\Projet_WinUI_CombatDonjon.Data.csproj.CoreCompileInputs.cache
+C:\Users\Travail\source\repos\Projet_WinUI_CombatDonjon\CombatDonjon.Data\obj\Debug\net10.0\Projet_WinUI_CombatDonjon.Data.sourcelink.json

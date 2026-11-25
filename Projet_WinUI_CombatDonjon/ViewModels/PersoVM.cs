@@ -1,4 +1,4 @@
-using CombatDonjon.Data.Models;
+using Projet_WinUI_CombatDonjon.Data.Models;
 using System.Collections.ObjectModel;
 using System.ComponentModel.DataAnnotations;
 

@@ -1,4 +1,4 @@
-﻿namespace CombatDonjon.Data.Models.Classes
+﻿namespace Projet_WinUI_CombatDonjon.Data.Models.Classes
 {
     // Je sert de pont pour attribué les classes des personnages et leurs stats
     public enum TypeClasse

@@ -1,4 +1,4 @@
-﻿namespace CombatDonjon.Data.Models
+﻿namespace Projet_WinUI_CombatDonjon.Data.Models
 {
     public class Combat
     {

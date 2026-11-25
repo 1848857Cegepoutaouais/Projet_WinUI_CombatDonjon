@@ -1,4 +1,4 @@
-﻿namespace CombatDonjon.Data.Models.Classes
+﻿namespace Projet_WinUI_CombatDonjon.Data.Models.Classes
 {
     public class Mage : ClasseJoueur
     {
