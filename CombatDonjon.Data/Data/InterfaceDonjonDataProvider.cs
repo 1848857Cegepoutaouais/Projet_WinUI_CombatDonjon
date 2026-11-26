@@ -10,6 +10,7 @@ namespace Projet_WinUI_CombatDonjon.Data.Data
     {
         // Méthodes de gestion des joueurs
         List<Joueur> GetJoueurs();
+        List<ClasseJoueur> GetClasseJoueurs();
         void AjouterJoueur(Joueur joueur);
         void SupprimerJoueur(int joueurId);
         void ModifierJoueur(int id, string nouvNom, ClasseJoueur nouvClasse);

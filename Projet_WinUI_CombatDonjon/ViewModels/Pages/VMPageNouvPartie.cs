@@ -46,13 +46,13 @@ namespace Projet_WinUI_CombatDonjon.ViewModels.Pages
         public VMPageNouvPartie(InterfaceDonjonDataProvider donjonDataProvider)
         {
             _dataProvider = donjonDataProvider;
-            NouveauPerso = CreerNouvPerso();
+            //NouveauPerso = CreerNouvPerso();
         }
 
-        private static PersoVM CreerNouvPerso()
+        /*private static PersoVM CreerNouvPerso()
         {
             return new PersoVM(new Joueur());
-        }
+        }*/
 
         public void ChargerDonnees()
         {
@@ -75,6 +75,18 @@ namespace Projet_WinUI_CombatDonjon.ViewModels.Pages
                 return;
             }
             _dataProvider.ModifierJoueur(persoVM.Id, persoVM.Nom, persoVM.Classe);
+        }
+
+        public void SupprimPerso()
+        {
+            if (PersoSelect == null)
+            {
+                return;
+            }
+
+            _dataProvider.SupprimerJoueur(PersoSelect.Id);
+            PersoVMs.Remove(PersoSelect);
+            PersoSelect = null;
         }
     }
 }

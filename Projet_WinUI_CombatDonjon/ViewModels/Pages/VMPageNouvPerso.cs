@@ -1,7 +1,7 @@
 // To learn more about WinUI, the WinUI project structure,
 // and more about our project templates, see: http://aka.ms/winui-project-info.
 
-using CombatDonjon.Data.Models;
+using Projet_WinUI_CombatDonjon.Data.Models;
 using Projet_WinUI_CombatDonjon.Data.Data;
 using System.Collections.ObjectModel;
 
@@ -43,29 +43,19 @@ namespace Projet_WinUI_CombatDonjon.ViewModels.Pages
             }
         }
 
-        public VMPageNouvPerso(InterfaceDonjonDataProvider donjonDataProvider)
+        public VMPageNouvPerso()
         {
-            _dataProvider = donjonDataProvider;
-            NouveauPerso = CreerNouvPerso();
+            NouveauPerso = new PersoVM(new Joueur());
+        }
+
+        public VMPageNouvPerso(PersoVM persoVM)
+        {
+            NouveauPerso = persoVM;
         }
 
         private static PersoVM CreerNouvPerso()
         {
             return new PersoVM(new Joueur());
-        }
-
-        public void AjouterPerso(PersoVM persoVM)
-        {
-            _dataProvider.AjouterJoueur(new Joueur(persoVM.Nom, persoVM.Classe));
-        }
-
-        public void ModifierPerso(PersoVM persoVM)
-        {
-            if (persoVM == null)
-            {
-                return;
-            }
-            _dataProvider.ModifierJoueur(persoVM.Id, persoVM.Nom, persoVM.Classe);
         }
     }
 }

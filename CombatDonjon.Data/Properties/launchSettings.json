@@ -1,6 +1,10 @@
 {
   "profiles": {
     "CombatDonjon.Data": {
+      "commandName": "Project",
+      "debugEngines": "managed"
+    },
+    "Profil 1": {
       "commandName": "Project"
     }
   }

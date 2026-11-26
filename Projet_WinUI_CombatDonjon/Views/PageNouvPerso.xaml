@@ -48,7 +48,23 @@
                         IsColorFontEnabled="True"
                         Text="{x:Bind ViewModel.Titre, Mode=OneWay}" />
                 </StackPanel>
-                <TextBox />
+                <TextBox
+                    Header="Nom du personnage"
+                    PlaceholderText="Nom du personnage"
+                    Text="{x:Bind ViewModel.NouveauPerso.Nom, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}" />
+
+                <ComboBox
+                    Width="200"
+                    Header="Classe du personnage"
+                    ItemsSource="{x:Bind ClasseOptions}"
+                    SelectedItem="{x:Bind ChoixClasse, Mode=TwoWay}" />
+
+
+                <ItemsView Foreground="Red" ItemsSource="{x:Bind ViewModel.NouveauPerso.GetErrors('Nom'), Mode=OneWay}">
+                    <ItemsView.Resources>
+                        <SolidColorBrush x:Key="ItemContainerPointerOverBackground" Color="Transparent" />
+                    </ItemsView.Resources>
+                </ItemsView>
 
                 <!--
                 <ListView
@@ -69,23 +85,6 @@
                     <Button Click="Button_Creer_Perso_Click" Content="Créer le Personnage" />
                     <Button Click="Button_Annuler_Perso_Click" Content="Annuler" />
                 </StackPanel>
-
-
-                <Button
-                    x:Name="Button_Nv_Perso"
-                    Width="200"
-                    Padding="10"
-                    HorizontalAlignment="Center"
-                    Background="#929292"
-                    BorderBrush="#444444"
-                    BorderThickness="2"
-                    Click="Button_Nv_Partie_Fin_Click"
-                    CornerRadius="25">
-                    <TextBlock
-                        FontSize="20"
-                        Foreground="White"
-                        Text="Nouvelle Partie" />
-                </Button>
 
 
 

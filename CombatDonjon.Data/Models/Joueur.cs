@@ -32,7 +32,7 @@ namespace Projet_WinUI_CombatDonjon.Data.Models
         public Joueur(string nom, TypeClasse classe, float pv, float attaque, float defense, float esquive, float acc, float xp, int niveau)
         {
             Nom = nom;
-            Classe = ClasseJoueur.ConvertEnumClasseToClass(classe);
+            Classe = ClasseJoueur.ConvertEnumTypeClasseToClasse(classe);
             Pv = pv;
             Attaque = attaque;
             Defense = defense;

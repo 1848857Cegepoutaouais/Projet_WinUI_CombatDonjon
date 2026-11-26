@@ -2,6 +2,17 @@
 {
     public class Mage : ClasseJoueur
     {
+        public override string? ClasseNom
+        {
+            get
+            {
+                return "Barbare";
+            }
+            set
+            {
+                ClasseNom = "Barbare";
+            }
+        }
         public new float Pv => 20.0f;
         public new float Attaque => 15.0f;
         public new float Defense => 0.0f;

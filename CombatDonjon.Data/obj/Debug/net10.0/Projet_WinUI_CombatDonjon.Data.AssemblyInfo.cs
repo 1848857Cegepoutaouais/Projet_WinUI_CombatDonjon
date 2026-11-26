@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("Projet_WinUI_CombatDonjon.Data")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+632e2494cfa7490d0812ca7c3ae04f8b34899ac3")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+318725b8a27c67b5e5507f9647d5e04adbef4404")]
 [assembly: System.Reflection.AssemblyProductAttribute("Projet_WinUI_CombatDonjon.Data")]
 [assembly: System.Reflection.AssemblyTitleAttribute("Projet_WinUI_CombatDonjon.Data")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

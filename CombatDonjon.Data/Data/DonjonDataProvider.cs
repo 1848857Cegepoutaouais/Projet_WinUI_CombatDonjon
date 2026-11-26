@@ -1,4 +1,5 @@
 using Projet_WinUI_CombatDonjon.Data.Models;
+using Projet_WinUI_CombatDonjon.Data.Models.Classes;
 
 
 // To learn more about WinUI, the WinUI project structure,
@@ -9,10 +10,18 @@ namespace Projet_WinUI_CombatDonjon.Data.Data
     public class DonjonDataProvider : InterfaceDonjonDataProvider
     {
         private static List<Joueur>? _joueurs;
+        private static List<ClasseJoueur>? _classeJoueurs;
         private static int _prochainIdJoueur = 1;
         private void InitialiserJoueurs()
         {
             //TODO
+        }
+
+        private void InitialiserClassesJoueurs()
+        {
+            _classeJoueurs.Add(new Barbare());
+            _classeJoueurs.Add(new Chasseur());
+            _classeJoueurs.Add(new Mage());
         }
 
         public List<Joueur> GetJoueurs()
@@ -24,6 +33,17 @@ namespace Projet_WinUI_CombatDonjon.Data.Data
             }
 
             return _joueurs;
+        }
+
+        public List<ClasseJoueur> GetClasseJoueurs()
+        {
+            if (_classeJoueurs == null)
+            {
+                _classeJoueurs = new List<ClasseJoueur>();
+                InitialiserClassesJoueurs();
+            }
+
+            return _classeJoueurs;
         }
 
         public void AjouterJoueur(Joueur joueur)
@@ -55,7 +75,8 @@ namespace Projet_WinUI_CombatDonjon.Data.Data
                 }
 
                 // Si la classe du personnage est différent de la nouvelle classe, on la change
-                if (jExiste.Classe != nouvClasse)
+                // TODO Faire en sorte que ça change pas la classeJoueur si on ne la change pas
+                if (jExiste.Classe.GetType() != nouvClasse.GetType())
                 {
                     jExiste.Classe = nouvClasse;
                 }

@@ -2,6 +2,17 @@
 {
     public class Chasseur : ClasseJoueur
     {
+        public override string? ClasseNom
+        {
+            get
+            {
+                return "Barbare";
+            }
+            set
+            {
+                ClasseNom = "Barbare";
+            }
+        }
         public new float Pv => 25.0f;
         public new float Attaque => 10.0f;
         public new float Defense => 0.0f;

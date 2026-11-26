@@ -35,6 +35,11 @@
                     Style="{StaticResource DisplayTextBlockStyle}"
                     Text="Projet WinUI : Combat Donjon" />
 
+                <TextBlock
+                    FontFamily="Bahnschrift"
+                    FontSize="20"
+                    Foreground="White"
+                    Text="Liste des personnages" />
 
                 <ListView
                     AutomationProperties.Name="Liste des Personnages"
@@ -42,23 +47,41 @@
                     SelectedItem="{x:Bind ViewModel.PersoSelect, Mode=TwoWay}">
                     <ListView.ItemTemplate>
                         <DataTemplate x:DataType="viewmodels:PersoVM">
-                            <TextBlock
-                                Padding="4"
-                                FontFamily="Bahnschrift"
-                                FontSize="20"
-                                Text="{x:Bind Nom, Mode=OneWay}" />
+                            <StackPanel
+                                Width="Justify"
+                                Padding="10"
+                                HorizontalAlignment="Left"
+                                Background="#606060"
+                                BorderBrush="#333333"
+                                BorderThickness="4"
+                                Orientation="Horizontal">
+                                <TextBlock
+                                    Padding="4"
+                                    FontFamily="Bahnschrift"
+                                    FontSize="20"
+                                    Foreground="White"
+                                    Text="{x:Bind Nom, Mode=OneWay}" />
+                                <TextBlock
+                                    Padding="4"
+                                    HorizontalAlignment="Left"
+                                    FontFamily="Bahnschrift"
+                                    FontSize="20"
+                                    Foreground="White"
+                                    Text="{x:Bind Classe.ClasseNom, Mode=OneWay}" />
+                            </StackPanel>
                         </DataTemplate>
                     </ListView.ItemTemplate>
                 </ListView>
                 <StackPanel Orientation="Horizontal" Spacing="8">
                     <Button Click="Button_Nv_Perso_Click" Content="Nouveau Personnage" />
                     <Button Click="Button_Modif_Perso_Click" Content="Modifier le personnage" />
+                    <Button Click="Button_Supprim_Perso_Click" Content="Supprimer le personnage" />
                     <Button Click="Button_nv_PersoD_Click" Content="Default le personnage" />
                 </StackPanel>
 
 
                 <Button
-                    x:Name="Button_Nv_Perso"
+                    x:Name="Button_Nv_Partie_Fin"
                     Width="200"
                     Padding="10"
                     HorizontalAlignment="Center"
