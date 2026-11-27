@@ -35,12 +35,10 @@
                     Text="Projet WinUI : Combat Donjon" />
 
                 <StackPanel
-                    Margin="10,10,10,10"
+                    Margin="10,0,0,10"
                     Padding="10"
                     Spacing="10">
                     <TextBlock
-                        Margin="10,10,10,10"
-                        Padding="10"
                         AutomationProperties.HeadingLevel="Level3"
                         FontFamily="Bahnschrift"
                         FontSize="32"

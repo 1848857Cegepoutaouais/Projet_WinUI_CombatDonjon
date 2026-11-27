@@ -35,6 +35,16 @@
                     Style="{StaticResource DisplayTextBlockStyle}"
                     Text="Projet WinUI : Combat Donjon" />
 
+                <TextBox
+                    Header="Nom de la partie"
+                    PlaceholderText="Nom de la partie"
+                    Text="{x:Bind ViewModel.NouvellePartie.PartieNom, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}" />
+                <ItemsView Foreground="Red" ItemsSource="{x:Bind ViewModel.NouvellePartie.GetErrors('PartieNom'), Mode=OneWay}">
+                    <ItemsView.Resources>
+                        <SolidColorBrush x:Key="ItemContainerPointerOverBackground" Color="Transparent" />
+                    </ItemsView.Resources>
+                </ItemsView>
+
                 <TextBlock
                     FontFamily="Bahnschrift"
                     FontSize="20"
@@ -48,7 +58,8 @@
                     <ListView.ItemTemplate>
                         <DataTemplate x:DataType="viewmodels:PersoVM">
                             <StackPanel
-                                Width="Justify"
+                                Width="Auto"
+                                Margin="2"
                                 Padding="10"
                                 HorizontalAlignment="Left"
                                 Background="#606060"
@@ -56,12 +67,16 @@
                                 BorderThickness="4"
                                 Orientation="Horizontal">
                                 <TextBlock
+                                    Width="400"
+                                    MinWidth="400"
+                                    Margin="0,0,50,0"
                                     Padding="4"
                                     FontFamily="Bahnschrift"
                                     FontSize="20"
                                     Foreground="White"
                                     Text="{x:Bind Nom, Mode=OneWay}" />
                                 <TextBlock
+                                    Width="100"
                                     Padding="4"
                                     HorizontalAlignment="Left"
                                     FontFamily="Bahnschrift"

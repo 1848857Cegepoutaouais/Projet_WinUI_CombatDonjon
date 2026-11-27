@@ -6,18 +6,18 @@
         {
             get
             {
-                return "Barbare";
+                return "Mage";
             }
             set
             {
-                ClasseNom = "Barbare";
+                ClasseNom = "Mage";
             }
         }
-        public new float Pv => 20.0f;
-        public new float Attaque => 15.0f;
-        public new float Defense => 0.0f;
-        public new float Esquive => 0.0f;
-        public new float Acc => 10.0f;
+        public override float Pv => 20.0f;
+        public override float Attaque => 15.0f;
+        public override float Defense => 0.0f;
+        public override float Esquive => 0.0f;
+        public override float Acc => 10.0f;
 
     }
 }

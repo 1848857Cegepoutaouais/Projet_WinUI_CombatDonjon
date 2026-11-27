@@ -17,6 +17,10 @@ et de se battre contre des groupes de monstres.
 L'utilisateur va pouvoir sauvegarder des équipes et les charger via des fichiers Json(peut-être, si je ne trouve pas un meilleur format)
 Chaque classe d'aventurier va pouvoir utilisé des capacité différentes
 
+## Quirks de mon code
+- Lors de la création d'une partie, le nom de la partie n'est pas gardé après avoir ajouté ou modifié un personnage
+- Lors de la création du permier joueur, le titre de la page ne s'affiche pas correctement
+
 ## Les classes
 ```mermaid
 classDiagram

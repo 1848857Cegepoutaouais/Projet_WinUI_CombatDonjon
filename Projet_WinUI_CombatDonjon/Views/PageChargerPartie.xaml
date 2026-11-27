@@ -8,7 +8,73 @@
     xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
     mc:Ignorable="d">
 
-    <Grid>
+    <Grid Background="Black">
+        <StackPanel
+        x:Name="BoiteNouvPerso"
+        HorizontalAlignment="Center"
+        VerticalAlignment="Center"
+        Background="#606060"
+        BorderBrush="#444444"
+        BorderThickness="5"
+        CornerRadius="100"
+        Spacing="20">
+            <StackPanel
+            Padding="20"
+            HorizontalAlignment="Center"
+            Spacing="20">
+                <TextBlock
+                Margin="10,10,10,10"
+                Padding="10"
+                AutomationProperties.HeadingLevel="Level1"
+                FontFamily="Bahnschrift"
+                FontSize="52"
+                FontWeight="Bold"
+                Foreground="White"
+                IsColorFontEnabled="True"
+                Style="{StaticResource DisplayTextBlockStyle}"
+                Text="Projet WinUI : Combat Donjon" />
 
+                <TextBlock
+                FontFamily="Bahnschrift"
+                FontSize="20"
+                Foreground="White"
+                Text="Liste des parties" />
+
+                <ListView
+                    AutomationProperties.Name="Liste des Personnages"
+                    ItemsSource="{x:Bind ViewModel.PersoVMs, Mode=OneWay}"
+                    SelectedItem="{x:Bind ViewModel.PersoSelect, Mode=TwoWay}">
+                    <ListView.ItemTemplate>
+                        <DataTemplate x:DataType="viewmodels:PersoVM">
+                            <StackPanel
+                                Width="Auto"
+                                Margin="2"
+                                Padding="10"
+                                HorizontalAlignment="Left"
+                                Background="#606060"
+                                BorderBrush="#333333"
+                                BorderThickness="4"
+                                Orientation="Horizontal">
+                                <TextBlock
+                                    Width="400"
+                                    MinWidth="400"
+                                    Margin="0,0,50,0"
+                                    Padding="4"
+                                    FontFamily="Bahnschrift"
+                                    FontSize="20"
+                                    Foreground="White"
+                                    Text="{x:Bind Nom, Mode=OneWay}" />
+                                <TextBlock
+                                    Width="100"
+                                    Padding="4"
+                                    HorizontalAlignment="Left"
+                                    FontFamily="Bahnschrift"
+                                    FontSize="20"
+                                    Foreground="White"
+                                    Text="{x:Bind Classe.ClasseNom, Mode=OneWay}" />
+                            </StackPanel>
+                        </DataTemplate>
+                    </ListView.ItemTemplate>
+                </ListView>
     </Grid>
 </Page>

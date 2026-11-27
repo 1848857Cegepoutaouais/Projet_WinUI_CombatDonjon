@@ -2,24 +2,24 @@
 
 namespace Projet_WinUI_CombatDonjon.Data.Models
 {
-    public abstract class ClasseJoueur
+    public class ClasseJoueur
     {
-        public abstract string? ClasseNom { get; set; }
+        public virtual string? ClasseNom { get; set; }
         
         // Points de vie de base de la classe
-        public float Pv { get; set; }
+        public virtual float Pv { get; set; }
 
         // Stat d'attaque de base de la classe
-        public float Attaque { get; set; }
+        public virtual float Attaque { get; set; }
 
         // Stat de défense de base de la classe
-        public float Defense { get; set; }
+        public virtual float Defense { get; set; }
 
         // Stat d'esquive de base de la classe
-        public float Esquive { get; set; }
+        public virtual float Esquive { get; set; }
 
         // Stat de précision de base de la classe
-        public float Acc { get; set; }
+        public virtual float Acc { get; set; }
 
         /// <summary>
         /// Fontion pour transformé l'Enum TypeClasse en un objet Classe

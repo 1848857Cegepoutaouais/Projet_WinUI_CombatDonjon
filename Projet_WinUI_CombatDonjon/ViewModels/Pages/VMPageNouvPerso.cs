@@ -9,7 +9,7 @@ namespace Projet_WinUI_CombatDonjon.ViewModels.Pages
 {
     public sealed partial class VMPageNouvPerso : ViewModelBase
     {
-        private readonly InterfaceDonjonDataProvider _dataProvider;
+        private readonly IDonjonDataProvider _dataProvider;
 
         public ObservableCollection<PersoVM> PersoVMs { get; } = new ObservableCollection<PersoVM>();
 
@@ -28,11 +28,13 @@ namespace Projet_WinUI_CombatDonjon.ViewModels.Pages
             }
         }
 
+        private string _titre = "Nouveau Personnage";
+
         public string Titre
         {
             get
             {
-                if (NouveauPerso.Id == 0)
+                if (NouveauPerso.Id == 0 || NouveauPerso is null)
                 {
                     return "Nouveau Personnage";
                 }

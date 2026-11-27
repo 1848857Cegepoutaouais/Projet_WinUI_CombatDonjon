@@ -10,19 +10,19 @@ namespace Projet_WinUI_CombatDonjon.ViewModels.Pages
 {
     public class VMPageNouvPartie : ViewModelBase
     {
-        private readonly InterfaceDonjonDataProvider _dataProvider;
+        private readonly IDonjonDataProvider _dataProvider;
         public ObservableCollection<PersoVM> PersoVMs { get; } = new ObservableCollection<PersoVM>();
 
-        private PersoVM _nouvPerso;
+        private PartieVM _nouvPartie;
 
-        public PersoVM NouveauPerso
+        public PartieVM NouvellePartie
         {
-            get { return _nouvPerso; }
+            get { return _nouvPartie; }
             set
             {
-                if (_nouvPerso != value)
+                if (_nouvPartie != value)
                 {
-                    _nouvPerso = value;
+                    _nouvPartie = value;
                     RaisePropertyChanged();
                 }
             }
@@ -43,7 +43,12 @@ namespace Projet_WinUI_CombatDonjon.ViewModels.Pages
             }
         }
 
-        public VMPageNouvPartie(InterfaceDonjonDataProvider donjonDataProvider)
+        public VMPageNouvPartie(PartieVM partieVM)
+        {
+            NouvellePartie = partieVM;
+        }
+
+        public VMPageNouvPartie(IDonjonDataProvider donjonDataProvider)
         {
             _dataProvider = donjonDataProvider;
             //NouveauPerso = CreerNouvPerso();

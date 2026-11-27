@@ -7,14 +7,44 @@ using Projet_WinUI_CombatDonjon.Data.Models.Classes;
 
 namespace Projet_WinUI_CombatDonjon.Data.Data
 {
-    public class DonjonDataProvider : InterfaceDonjonDataProvider
+    public class DonjonDataProvider : IDonjonDataProvider
     {
+        // Méthodes des parties
+        private static List<Partie> _parties;
+        private static int _prochainIdPartie = 1;
+
+        private void InitialiserPartie()
+        {
+            AjouterPartie(new Partie("Partie default", new Donjon(), GetJoueurs()));
+        }
+
+        public List<Partie> GetParties()
+        {
+            if (_parties == null)
+            {
+                _parties = new List<Partie>();
+                InitialiserPartie();
+            }
+            return _parties;
+        }
+
+        public void AjouterPartie(Partie partie)
+        {
+            ArgumentNullException.ThrowIfNull(partie);
+
+            partie.PartieId = _prochainIdPartie++;
+            _parties.Add(partie);
+        }
+
+        // Méthodes des joueurs
         private static List<Joueur>? _joueurs;
         private static List<ClasseJoueur>? _classeJoueurs;
         private static int _prochainIdJoueur = 1;
         private void InitialiserJoueurs()
         {
-            //TODO
+            AjouterJoueur(new Joueur("Joueur par défault Barbare", new Barbare()));
+            AjouterJoueur(new Joueur("Joueur par défault Chasseur", new Chasseur()));
+            AjouterJoueur(new Joueur("Joueur par défault Mage", new Mage()));
         }
 
         private void InitialiserClassesJoueurs()

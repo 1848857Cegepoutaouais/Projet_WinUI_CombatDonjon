@@ -18,7 +18,6 @@ namespace Projet_WinUI_CombatDonjon.Views
     /// </summary>
     public sealed partial class PageNouvPartie : Page
     {
-        private int _defaultPersoNameNo = 0;
         public VMPageNouvPartie ViewModel { get; }
         public PageNouvPartie()
         {
@@ -81,13 +80,15 @@ namespace Projet_WinUI_CombatDonjon.Views
             TypeClasse typeClasseDefault = (TypeClasse)rnd.Next(3);
             ClasseJoueur classeDefault = ClasseJoueur.ConvertEnumTypeClasseToClasse(typeClasseDefault);
             PersoVM dPerso = new PersoVM(new Joueur($"Test Perso", classeDefault));
-            _defaultPersoNameNo++;
             Frame.Navigate(typeof(PageNouvPartie), dPerso);
         }
 
         private void Button_Nv_Partie_Fin_Click(object sender, RoutedEventArgs e)
         {
             // Sauvegarder la partie dans la BD
+            // TODO
+
+            // Naviguer vers la page combat
             Frame.Navigate(typeof(PageCombat));
         }
     }

@@ -7,14 +7,14 @@ namespace Projet_WinUI_CombatDonjon.Data.Models
         public int Id { get; set; }
         // Points de vie maximum du joueur pour ne pas pouvoir guérir plus que les points de vie de départ
         public float MaxPv { get; set; }
-
         // Classe du joueur 
         public ClasseJoueur Classe { get; set; }
-
         // Niveau du joueur 
         public int Niveau { get; set; }
-
         public bool GodMode { get; set; } = false;
+
+        public Partie Partie { get; set; }
+        public int PartieId { get; set; }
 
         /// <summary>
         /// Constructeur pour créer un nouveau joueur
@@ -46,7 +46,7 @@ namespace Projet_WinUI_CombatDonjon.Data.Models
 
         public Joueur()
         {
-            Nom = "Default ou Érreur";
+            Nom = "";
             Classe = new Barbare();
             Niveau = 1;
             CalculStat();
